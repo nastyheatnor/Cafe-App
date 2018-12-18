@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="styles.css">
+<script src="javascript.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<title>Checkout</title>
+</head>
+<body onLoad="getCartMenu();">
+<div id="wrapper" style="text-align:center">
+	<h1>Cart</h1>
+	<h1>Your Cart</h1>
+	<div id="menu-listing">
+		<table id="base-table">
+		</table>
+	</div>
+	<div id="order-wrap">
+		<div id="order-confirm">
+			<button onclick="location.href='Purchase.html'">Confirm Order</button>
+			<hr style="margin:0px;">
+			<button onclick="goback();">Go back</button>
+		</div>
+		<div id="order-stats" style="margin:0px;">
+			<h1 id="price">$0.00</h1>
+			<h1 id="count">0 Items</h1>
+		</div>
+	</div>
+</div>
+</body>
+</html>

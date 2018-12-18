@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
+<link rel="stylesheet" href="styles.css"> 
+<script src="javascript.js"></script> 
+<title>Bates Faculty Lunch Program</title> 
+<style>
+	.qtybtn {
+		width:50px; 
+		height:50px; 
+		background-size:cover; 
+		background-repeat:no-repeat;
+		background-color:transparent;
+		border:none;
+	}
+
+	.qtydisp {
+		background-color:transparent;		
+	}
+
+	input {
+		text-align:center;
+		width:100%;
+		border:none;
+		background-color:transparent;
+		color:white;
+		font-size:20px;
+	}
+
+	#qty-div {
+		width:50px;
+		display:inline-block;
+		height:100%;
+	}
+
+	.modal-button {
+		border:2px solid white;
+		background-color:transparent;
+		color:white;
+		font-size:20px;		
+	}
+</style>
+<script>
+
+function inc()
+{
+	var elem = document.getElementById("qty");
+	elem.value = parseInt(elem.value) + 1;
+}
+
+function dec()
+{
+	var elem = document.getElementById("qty");
+	if(parseInt(elem.value) > 1)
+	{
+		elem.value = parseInt(elem.value) - 1;
+	}
+}
+
+function adds()
+{
+	var ct = document.getElementById("qty");
+	var itm = document.getElementById("current-id-listing").innerHTML;
+	var options = [];
+	var optionstr = "";
+	var optionselems = document.getElementById("options-table").getElementsByTagName("tr");
+	for(var j = 0; j < optionselems.length; j++)
+	{
+		var option = {};
+		option.type = optionselems[j].getElementsByTagName("p")[0].innerHTML;
+		if(option.type == "Options")
+		{
+			option.name = optionselems[j].getElementsByTagName("label")[0].innerHTML;
+			option.value = optionselems[j].getElementsByTagName("select")[0].value;
+		}else if(option.type == "Text")
+		{
+			option.name = optionselems[j].getElementsByTagName("input")[0].placeholder;
+			option.value = optionselems[j].getElementsByTagName("input")[0].value;
+		}
+		optionstr += option.name + "_" + option.value;
+		optionstr += ",";
+	}
+	for(var i = 0; i < parseInt(ct.value); i++)
+	{
+		addToCart(parseInt(itm), optionstr);
+	}
+	close();
+}
+
+function close()
+{
+	var ct = document.getElementById("qty");
+	ct.value = 1;
+	document.getElementById("myModal").style.display = "none";
+}
+
+function init()
+{
+	var title = document.getElementById("MechTitle");
+	var mech = localStorage.getItem("mechanism");
+
+	if(mech == "BFLP")
+	{
+		title.innerHTML = "Bates Faculty Lunch Program";
+	}else if(mech == "MHC")
+	{
+		title.innerHTML = "Maryland Hall Catering";
+	}else if(mech == "RP")
+	{
+		title.innerHTML = "Rapid Pickup";
+	}
+}
+</script>
+<style>
+	#item-name {
+		font-size:20px;
+		color:white;
+	}
+	#options {
+		display:inline-block;
+		background-color:black;
+		color:white;
+		font-size:20px;
+		vertical-align:top;
+	}
+	#options-table label {
+		margin-right:5px;
+	}
+	#options-table button {
+		width:100px;
+		height:100px;
+		background-color:transparent;
+		border-color:white;
+		color:white;
+	}
+	#options-table select {
+		background-color:transparent;
+		border-color:white;
+		color:white;
+		font-size:20px;
+	}
+	#options-table select option {
+		background: rgba(0, 0, 0, 1);
+		color:white;
+	}
+</style>
+</head>
+<body onLoad="load(localStorage.getItem('mechanism')); init();">
+<div id="wrapper" style="text-align:center">
+	<h1 id="MechTitle">Bates Faculty Lunch Program</h1>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+		<p id="item-name"></p>
+		<div id="qty-div">
+			<button class="qtybtn" style="background-image: url(images/up_arrow.png);" onclick="inc()">
+			</button>
+			<br>
+			<input type="number" id="qty" value="1" min="1">
+			<br>
+			<button class="qtybtn" style="background-image: url(images/down_arrow.png)" onclick="dec()">
+			</button>
+		</div>
+		<div id="options">
+			<table id="options-table">
+			</table>
+		</div>
+		<br>
+  	       	<p id="current-id-listing" style="display:none">-1</p>
+		<span class="close" onclick="	document.getElementById('myModal').style.display = 'none'; document.getElementById('qty').value = 1;">&times;</span>
+		<button class="modal-button" onclick="adds()">Add item to cart</button>
+          </div>
+        </div>
+	<div id="menu-listing">
+		<table id="base-table">
+		</table>
+		 <div id="loading-wheel" style="visibility:visible">
+                        <img src="images/loadanim.gif" />
+                        <h3 style="color:white; font-size:30px;">Loading...</h3>
+                </div>
+	</div>
+	
+    <div id="order-wrap">
+		<div style="display:inline-block; bottom:0px; width:100%;"> 
+			<button class="float-button" id="back" onclick="location.href='Main.html'">Back</button>
+			<button class="float-button" id="checkout" onclick="location.href='Checkout.html'">Checkout</button>
+		</div>
+		<div id="current-order">
+		</div>
+        <div id="order-stats">
+        	<h1 id="price">$0.00</h1>
+            <h1 id="count">0 Items</h1>
+        </div>
+    </div>
+</div>
+</body>
+</html>
