@@ -19,6 +19,9 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="PushbotsPlugin">
+        <param name="ios-package" value="PushbotsPlugin" />
+    </feature>
     <name>Cafe App</name>
     <description>
         A blank PhoneGap app.

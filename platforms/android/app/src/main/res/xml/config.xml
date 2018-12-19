@@ -12,9 +12,5 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <gap:plugin name="pushbots-cordova-plugin" source="npm" spec="1.5.x" />
     <preference name="loglevel" value="DEBUG" />
-    <preference name="android-minSdkVersion" value="15" />
-    <preference name="phonegap-version" value="cli-7.1.0" />
-    <preference name="android-build-tool" value="gradle" />
 </widget>

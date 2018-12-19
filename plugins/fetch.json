@@ -2,7 +2,7 @@
   "pushbots-cordova-plugin": {
     "source": {
       "type": "registry",
-      "id": "pushbots-cordova-plugin@1.6.0"
+      "id": "pushbots-cordova-plugin"
     },
     "is_top_level": true,
     "variables": {}
