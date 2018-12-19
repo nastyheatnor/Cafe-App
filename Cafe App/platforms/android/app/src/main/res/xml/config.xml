@@ -10,4 +10,7 @@
     <content src="index.html" />
     <access origin="*" />
     <preference name="loglevel" value="DEBUG" />
+    <feature name="PushbotsPlugin">
+        <param name="android-package" value="com.pushbots.plugin.PushbotsPlugin" />
+    </feature>
 </widget>
