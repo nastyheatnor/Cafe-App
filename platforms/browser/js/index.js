@@ -34,6 +34,7 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+		window.plugins.PushbotsPlugin.initialize("5c19b4970540a31b78243ed2", {"android":{"sender_id":"633747534823"}});
 		if(PushbotsPlugin.isiOS){
 			PushbotsPlugin.initializeiOS("5c19b4970540a31b78243ed2");
 		}
@@ -52,4 +53,5 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
+	
 };
