@@ -1,5 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.cafe.cafeapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="PushbotsPlugin">
+        <param name="android-package" value="com.pushbots.plugin.PushbotsPlugin" />
+    </feature>
     <name>Cafe App</name>
     <description>
         A blank PhoneGap app.
@@ -9,8 +12,9 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <gap:plugin name="pushbots-cordova-plugin" source="npm" spec="1.5.x" />
     <preference name="loglevel" value="DEBUG" />
-    <feature name="PushbotsPlugin">
-        <param name="android-package" value="com.pushbots.plugin.PushbotsPlugin" />
-    </feature>
+    <preference name="android-minSdkVersion" value="15" />
+    <preference name="phonegap-version" value="cli-7.1.0" />
+    <preference name="android-build-tool" value="gradle" />
 </widget>
