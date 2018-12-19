@@ -35,22 +35,6 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 		window.plugins.PushbotsPlugin.initialize("5c19b4970540a31b78243ed2", {"android":{"sender_id":"633747534823"}});
-		if(PushbotsPlugin.isiOS){
-			PushbotsPlugin.initializeiOS("5c19b4970540a31b78243ed2");
-		}
-		if(PushbotsPlugin.isAndroid){
-			PushbotsPlugin.initializeAndroid("5c19b4970540a31b78243ed2","633747534823");
-		}
-		window.plugins.PushbotsPlugin.initialize("5c19b4970540a31b78243ed2", {"android":{"sender_id":"633747534823"}});
-		// Only with First time registration
-		window.plugins.PushbotsPlugin.on("registered", function(token){
-			console.log("Registration Id:" + token);
-		});
-
-		//Get user registrationId/token and userId on PushBots, with evey launch of the app even launching with notification
-		window.plugins.PushbotsPlugin.on("user:ids", function(data){
-			console.log("user:ids" + JSON.stringify(data));
-		});
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
