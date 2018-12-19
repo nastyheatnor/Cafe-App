@@ -9,8 +9,8 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <engine name="ios" spec="~4.5.5" />
-    <engine name="android" spec="~7.1.4" />
-    <engine name="browser" spec="~5.0.4" />
     <plugin name="pushbots-cordova-plugin" spec="1.6.0" />
+    <engine name="ios" spec="^4.5.5" />
+    <engine name="android" spec="^7.1.4" />
+    <engine name="browser" spec="^5.0.4" />
 </widget>
