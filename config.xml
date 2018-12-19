@@ -10,9 +10,9 @@
     <content src="index.html" />
     <access origin="*" />
     <plugin name="pushbots-cordova-plugin" spec="1.6.0" />
-	<preference name="android-minSdkVersion" value="15" />
-	<preference name="android-build-tool" value="gradle" />
-	<gap:plugin name="pushbots-cordova-plugin" spec="1.6.x" source="npm" />
+    <preference name="android-minSdkVersion" value="27" />
+    <preference name="android-build-tool" value="gradle" />
+    <gap:plugin name="pushbots-cordova-plugin" source="npm" spec="1.6.x" />
     <engine name="ios" spec="^4.5.5" />
     <engine name="android" spec="^7.1.4" />
     <engine name="browser" spec="^5.0.4" />
