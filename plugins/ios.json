@@ -1,0 +1,19 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "phonegap-plugin-push": {
+      "SENDER_ID": "XXXXXXX",
+      "PACKAGE_NAME": "com.cafe.cafeapp"
+    },
+    "pushbots-cordova-plugin": {
+      "PACKAGE_NAME": "com.cafe.cafeapp"
+    }
+  },
+  "dependent_plugins": {}
+}

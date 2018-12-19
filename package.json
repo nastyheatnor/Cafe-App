@@ -1,0 +1,26 @@
+{
+    "name": "com.cafe.cafeapp",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "displayName": "cafeApp",
+    "cordova": {
+        "plugins": {
+            "phonegap-plugin-push": {
+                "SENDER_ID": "XXXXXXX"
+            },
+            "pushbots-cordova-plugin": {}
+        },
+        "platforms": [
+            "ios",
+            "android"
+        ]
+    },
+    "dependencies": {
+        "phonegap-plugin-push": "~1.8.0",
+        "cordova-ios": "~4.5.5",
+        "cordova-android": "~7.1.4",
+        "pushbots-cordova-plugin": "1.6.0"
+    }
+}

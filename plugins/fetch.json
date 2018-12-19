@@ -1,0 +1,20 @@
+{
+  "phonegap-plugin-push": {
+    "source": {
+      "type": "registry",
+      "id": "phonegap-plugin-push@~1.8.0"
+    },
+    "is_top_level": true,
+    "variables": {
+      "SENDER_ID": "XXXXXXX"
+    }
+  },
+  "pushbots-cordova-plugin": {
+    "source": {
+      "type": "registry",
+      "id": "pushbots-cordova-plugin"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
