@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "cordova-android": "~7.1.4",
+    "cordova-ios": "~4.5.5",
     "cordova-plugin-battery-status": "~1.2.4",
     "cordova-plugin-camera": "~2.4.1",
     "cordova-plugin-device": "~1.1.6",
@@ -38,11 +39,11 @@
     "cordova-plugin-inappbrowser": "~1.7.1",
     "cordova-plugin-media-capture": "~1.4.3",
     "cordova-plugin-network-information": "~1.3.3",
+    "cordova-plugin-push": "0.0.1",
     "cordova-plugin-vibration": "~2.1.5",
     "cordova-support-google-services": "1.1.0",
     "phonegap-plugin-multidex": "1.0.0",
     "phonegap-plugin-push": "2.2.3",
-    "pushbots-cordova-plugin": "1.6.0",
-    "cordova-ios": "~4.5.5"
+    "pushbots-cordova-plugin": "1.6.0"
   }
 }

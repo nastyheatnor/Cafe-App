@@ -39,6 +39,7 @@ var app = {
 		window.plugins.PushbotsPlugin.on("registered", function(token){
 			console.log("Registration Id:" + token);
 		});
+
 		//Get user registrationId/token and userId on PushBots, with evey launch of the app even launching with notification
 		window.plugins.PushbotsPlugin.on("user:ids", function(data){
 			console.log("user:ids" + JSON.stringify(data));

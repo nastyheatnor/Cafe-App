@@ -110,7 +110,7 @@
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="CameraUsesGeolocation" value="false" />
-    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-minSdkVersion" value="27" />
     <feature name="PushNotification">
         <param name="ios-package" value="PushPlugin" />
     </feature>
