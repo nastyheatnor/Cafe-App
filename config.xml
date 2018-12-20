@@ -105,7 +105,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <plugin name="onesignal-cordova-plugin" spec="2.4.6" />
     <engine name="android" spec="~7.1.4" />
     <engine name="ios" spec="~4.5.5" />
-    <plugin name="onesignal-cordova-plugin" spec="2.4.6" />
 </widget>
