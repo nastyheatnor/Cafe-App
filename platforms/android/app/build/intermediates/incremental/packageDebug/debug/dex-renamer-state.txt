@@ -1,4 +1,0 @@
-#Thu Dec 20 00:00:37 EST 2018
-base.0=E\:\\Coding\\Cafe-App\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex

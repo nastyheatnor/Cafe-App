@@ -26,11 +26,10 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDV.h>
 #import <Cordova/CDVPlugin.h>
-#import <PushKit/PushKit.h>
 
 @protocol GGLInstanceIDDelegate;
 @protocol GCMReceiverDelegate;
-@interface PushPlugin : CDVPlugin
+@interface PushPlugin : CDVPlugin<GGLInstanceIDDelegate, GCMReceiverDelegate>
 {
     NSDictionary *notificationMessage;
     BOOL    isInline;
@@ -69,16 +68,13 @@
 - (void)didSendDataMessageWithID:(NSString *)messageID;
 - (void)didDeleteMessagesOnServer;
 
-// VoIP Features
-- (void)pushRegistry:(PKPushRegistry *)registry didUpdatePushCredentials:(PKPushCredentials *)credentials forType:(NSString *)type;
-- (void)pushRegistry:(PKPushRegistry *)registry didReceiveIncomingPushWithPayload:(PKPushPayload *)payload forType:(NSString *)type;
-
-// FCM Features
-@property(nonatomic, assign) BOOL usesFCM;
-@property(nonatomic, strong) NSNumber *fcmSandbox;
-@property(nonatomic, strong) NSString *fcmSenderId;
-@property(nonatomic, strong) NSDictionary *fcmRegistrationOptions;
-@property(nonatomic, strong) NSString *fcmRegistrationToken;
-@property(nonatomic, strong) NSArray *fcmTopics;
+//  GCM Features
+@property(nonatomic, assign) BOOL usesGCM;
+@property(nonatomic, strong) NSNumber* gcmSandbox;
+@property(nonatomic, strong) NSString *gcmSenderId;
+@property(nonatomic, strong) NSDictionary *gcmRegistrationOptions;
+@property(nonatomic, strong) void (^gcmRegistrationHandler) (NSString *registrationToken, NSError *error);
+@property(nonatomic, strong) NSString *gcmRegistrationToken;
+@property(nonatomic, strong) NSArray *gcmTopics;
 
 @end
