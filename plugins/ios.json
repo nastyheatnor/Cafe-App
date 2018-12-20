@@ -48,6 +48,9 @@
     },
     "pushbots-cordova-plugin": {
       "PACKAGE_NAME": "com.cafeapp.app"
+    },
+    "phonegap-plugin-push": {
+      "PACKAGE_NAME": "com.cafeapp.app"
     }
   },
   "dependent_plugins": {

@@ -107,6 +107,9 @@
     </platform>
     <plugin name="cordova-plugin-compat" spec="~1.2.0" />
     <plugin name="pushbots-cordova-plugin" spec="1.6.0" />
+    <plugin name="phonegap-plugin-push" spec="^2.2.3">
+        <variable name="FCM_VERSION" value="11.8.0" />
+    </plugin>
     <engine name="android" spec="~6.2.0" />
     <engine name="ios" spec="~4.5.5" />
 </widget>

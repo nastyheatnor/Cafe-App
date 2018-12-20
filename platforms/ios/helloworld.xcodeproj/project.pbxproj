@@ -43,6 +43,9 @@
 		F16F4B06EFB14FE097DAD0D3 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5B69063C304A00B90FB21D /* CDVVibration.m */; };
 		63E55DDF0AED413D811DBEE3 /* PushbotsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B5F173BEC346F28157AAF8 /* PushbotsPlugin.m */; };
 		0B0727D95336432693D4EDF0 /* Pushbots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77CA5F5F23643C1A95AEFBB /* Pushbots.framework */; };
+		F5EA2A0C3E054B86AAC4A9AC /* AppDelegate+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 299C6E34DA504A89975BF53F /* AppDelegate+notification.m */; };
+		272D879B870741B69A12DE17 /* PushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 247D9752323648EBA7DC7B67 /* PushPlugin.m */; };
+		84623AA09DC04615A6777EE6 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DDE13892D6E41A79F6809D7 /* PushKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +131,11 @@
 		63B5F173BEC346F28157AAF8 /* PushbotsPlugin.m */ = {isa = PBXFileReference; name = "PushbotsPlugin.m"; path = "pushbots-cordova-plugin/PushbotsPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		6817387DF36B42B4AA4737DF /* PushbotsPlugin.h */ = {isa = PBXFileReference; name = "PushbotsPlugin.h"; path = "pushbots-cordova-plugin/PushbotsPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		F77CA5F5F23643C1A95AEFBB /* Pushbots.framework */ = {isa = PBXFileReference; name = "Pushbots.framework"; path = "helloworld/Plugins/pushbots-cordova-plugin/Pushbots.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		299C6E34DA504A89975BF53F /* AppDelegate+notification.m */ = {isa = PBXFileReference; name = "AppDelegate+notification.m"; path = "phonegap-plugin-push/AppDelegate+notification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		247D9752323648EBA7DC7B67 /* PushPlugin.m */ = {isa = PBXFileReference; name = "PushPlugin.m"; path = "phonegap-plugin-push/PushPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		05BDBB661D364CFABEFCE850 /* AppDelegate+notification.h */ = {isa = PBXFileReference; name = "AppDelegate+notification.h"; path = "phonegap-plugin-push/AppDelegate+notification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CA8B9ABD009C474492244AFB /* PushPlugin.h */ = {isa = PBXFileReference; name = "PushPlugin.h"; path = "phonegap-plugin-push/PushPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7DDE13892D6E41A79F6809D7 /* PushKit.framework */ = {isa = PBXFileReference; name = "PushKit.framework"; path = "System/Library/Frameworks/PushKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +152,7 @@
 				CA52240F7F74496E9D9CE8AB /* SystemConfiguration.framework in Frameworks */,
 				320BF467337F4D5FA4BF18EB /* CoreTelephony.framework in Frameworks */,
 				0B0727D95336432693D4EDF0 /* Pushbots.framework in Frameworks */,
+				84623AA09DC04615A6777EE6 /* PushKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +233,7 @@
 				5C4B73211D614A9FAAE54115 /* SystemConfiguration.framework */,
 				8BEF005355E04CA0AEEC9B74 /* CoreTelephony.framework */,
 				F77CA5F5F23643C1A95AEFBB /* Pushbots.framework */,
+				7DDE13892D6E41A79F6809D7 /* PushKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -284,6 +294,10 @@
 				7B1B6F9745DF4FCEA50F32C0 /* CDVVibration.h */,
 				63B5F173BEC346F28157AAF8 /* PushbotsPlugin.m */,
 				6817387DF36B42B4AA4737DF /* PushbotsPlugin.h */,
+				299C6E34DA504A89975BF53F /* AppDelegate+notification.m */,
+				247D9752323648EBA7DC7B67 /* PushPlugin.m */,
+				05BDBB661D364CFABEFCE850 /* AppDelegate+notification.h */,
+				CA8B9ABD009C474492244AFB /* PushPlugin.h */,
 			);
 			name = Plugins;
 			path = "helloworld/Plugins";
@@ -415,6 +429,8 @@
 				F682CA8855C14135B899D8B5 /* CDVReachability.m in Sources */,
 				F16F4B06EFB14FE097DAD0D3 /* CDVVibration.m in Sources */,
 				63E55DDF0AED413D811DBEE3 /* PushbotsPlugin.m in Sources */,
+				F5EA2A0C3E054B86AAC4A9AC /* AppDelegate+notification.m in Sources */,
+				272D879B870741B69A12DE17 /* PushPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

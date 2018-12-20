@@ -53,6 +53,12 @@
     <feature name="Vibration">
         <param name="ios-package" value="CDVVibration" />
     </feature>
+    <feature name="PushbotsPlugin">
+        <param name="ios-package" value="PushbotsPlugin" />
+    </feature>
+    <feature name="PushNotification">
+        <param name="ios-package" value="PushPlugin" />
+    </feature>
     <name>helloworld</name>
     <description>
         Hello World sample application that responds to the deviceready event.
@@ -110,8 +116,5 @@
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="CameraUsesGeolocation" value="false" />
-    <preference name="android-minSdkVersion" value="14" />
-    <feature name="PushbotsPlugin">
-        <param name="ios-package" value="PushbotsPlugin" />
-    </feature>
+    <preference name="android-minSdkVersion" value="15" />
 </widget>
