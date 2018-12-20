@@ -15,6 +15,9 @@
       "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
       "PACKAGE_NAME": "com.cafeapp.app"
     },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.cafeapp.app"
+    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.cafeapp.app"
     },
@@ -48,9 +51,6 @@
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-compat": {
-      "PACKAGE_NAME": "com.cafeapp.app"
-    },
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.cafeapp.app"
     }
