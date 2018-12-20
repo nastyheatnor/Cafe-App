@@ -10,9 +10,15 @@
             "phonegap-plugin-push": {
                 "SENDER_ID": "XXXXXXX"
             }
-        }
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
     },
     "dependencies": {
+        "cordova-android": "^7.1.4",
+        "cordova-ios": "^4.5.5",
         "phonegap-plugin-push": "~1.8.0"
     }
 }
