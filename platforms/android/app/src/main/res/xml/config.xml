@@ -38,12 +38,12 @@
     <feature name="OneSignalPush">
         <param name="android-package" value="com.plugin.gcm.OneSignalPush" />
     </feature>
-    <name>helloworld</name>
+    <name>Cafe App</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        App for Café @ Maryland Hall
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="lincolndoney@outlook.com" href="https://lincolnstools.ddns.net">
+        Lincoln Doney
     </author>
     <content src="index.html" />
     <access origin="*" />
