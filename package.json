@@ -7,9 +7,6 @@
     "displayName": "CafeApp",
     "cordova": {
         "plugins": {
-            "phonegap-plugin-push": {
-                "SENDER_ID": "XXXXXXX"
-            },
             "onesignal-cordova-plugin": {}
         },
         "platforms": [
@@ -20,7 +17,6 @@
     "dependencies": {
         "cordova-android": "^7.1.4",
         "cordova-ios": "^4.5.5",
-        "onesignal-cordova-plugin": "2.4.6",
-        "phonegap-plugin-push": "~1.8.0"
+        "onesignal-cordova-plugin": "2.4.6"
     }
 }

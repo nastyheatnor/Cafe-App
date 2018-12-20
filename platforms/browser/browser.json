@@ -7,32 +7,12 @@
     "files": {}
   },
   "installed_plugins": {
-    "phonegap-plugin-push": {
-      "SENDER_ID": "XXXXXXX",
-      "PACKAGE_NAME": "com.cafeapp.app"
-    },
     "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.cafeapp.app"
     }
   },
   "dependent_plugins": {},
   "modules": [
-    {
-      "file": "plugins/phonegap-plugin-push/www/push.js",
-      "id": "phonegap-plugin-push.PushNotification",
-      "pluginId": "phonegap-plugin-push",
-      "clobbers": [
-        "PushNotification"
-      ]
-    },
-    {
-      "file": "plugins/phonegap-plugin-push/www/browser/push.js",
-      "id": "phonegap-plugin-push.BrowserPush",
-      "pluginId": "phonegap-plugin-push",
-      "clobbers": [
-        "PushNotification"
-      ]
-    },
     {
       "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
       "id": "onesignal-cordova-plugin.OneSignal",
@@ -43,7 +23,6 @@
     }
   ],
   "plugin_metadata": {
-    "phonegap-plugin-push": "1.8.4",
     "onesignal-cordova-plugin": "2.4.6"
   }
 }
