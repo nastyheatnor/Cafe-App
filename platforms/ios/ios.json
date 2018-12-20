@@ -11,6 +11,10 @@
             {
               "xml": "<feature name=\"PushNotification\"><param name=\"ios-package\" value=\"PushPlugin\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"OneSignalPush\"><param name=\"ios-package\" value=\"OneSignalPush\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -20,7 +24,7 @@
           "UIBackgroundModes": [
             {
               "xml": "<array><string>remote-notification</string></array>",
-              "count": 1
+              "count": 2
             }
           ],
           "GCM_SENDER_ID": [
@@ -36,12 +40,35 @@
             }
           ]
         }
+      },
+      "*-Debug.plist": {
+        "parents": {
+          "aps-environment": [
+            {
+              "xml": "<string>development</string>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "*-Release.plist": {
+        "parents": {
+          "aps-environment": [
+            {
+              "xml": "<string>production</string>",
+              "count": 1
+            }
+          ]
+        }
       }
     }
   },
   "installed_plugins": {
     "phonegap-plugin-push": {
       "SENDER_ID": "XXXXXXX",
+      "PACKAGE_NAME": "com.cafeapp.app"
+    },
+    "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.cafeapp.app"
     }
   },
@@ -54,9 +81,18 @@
       "clobbers": [
         "PushNotification"
       ]
+    },
+    {
+      "id": "onesignal-cordova-plugin.OneSignal",
+      "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+      "pluginId": "onesignal-cordova-plugin",
+      "clobbers": [
+        "OneSignal"
+      ]
     }
   ],
   "plugin_metadata": {
-    "phonegap-plugin-push": "1.8.4"
+    "phonegap-plugin-push": "1.8.4",
+    "onesignal-cordova-plugin": "2.4.6"
   }
 }

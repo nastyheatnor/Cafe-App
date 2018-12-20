@@ -10,6 +10,9 @@
     "phonegap-plugin-push": {
       "SENDER_ID": "XXXXXXX",
       "PACKAGE_NAME": "com.cafeapp.app"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.cafeapp.app"
     }
   },
   "dependent_plugins": {}

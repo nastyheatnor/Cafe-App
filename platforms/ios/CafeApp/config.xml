@@ -22,6 +22,9 @@
     <feature name="PushNotification">
         <param name="ios-package" value="PushPlugin" />
     </feature>
+    <feature name="OneSignalPush">
+        <param name="ios-package" value="OneSignalPush" />
+    </feature>
     <name>CafeApp</name>
     <description>
         Push sample application that receives push notifications.

@@ -47,6 +47,8 @@
 		4A32D32C8FB548FCAF0C497C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BF3BD52D11464F913E1C60 /* AddressBook.framework */; };
 		A2FB4802E13740A3B730E5BB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C4D9EF48BD41E6BB3963E8 /* libsqlite3.tbd */; };
 		AAD3561C6CF7423DAA5A1900 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C6084D5734C541C3AFFB7C7D /* libz.tbd */; };
+		C24C2C3340CB499AB47A26A8 /* OneSignalPush.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F08A2EF0034EA4B9537E85 /* OneSignalPush.m */; };
+		2C6252A92D7C47F99473B4F2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E49A951AB34275B034491B /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +137,9 @@
 		32BF3BD52D11464F913E1C60 /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		C1C4D9EF48BD41E6BB3963E8 /* libsqlite3.tbd */ = {isa = PBXFileReference; name = "libsqlite3.tbd"; path = "usr/lib/libsqlite3.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
 		C6084D5734C541C3AFFB7C7D /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		A9F08A2EF0034EA4B9537E85 /* OneSignalPush.m */ = {isa = PBXFileReference; name = "OneSignalPush.m"; path = "onesignal-cordova-plugin/OneSignalPush.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		FFCCE75E4BD74CB08113D4CF /* OneSignalPush.h */ = {isa = PBXFileReference; name = "OneSignalPush.h"; path = "onesignal-cordova-plugin/OneSignalPush.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		95E49A951AB34275B034491B /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +177,7 @@
 				4A32D32C8FB548FCAF0C497C /* AddressBook.framework in Frameworks */,
 				A2FB4802E13740A3B730E5BB /* libsqlite3.tbd in Frameworks */,
 				AAD3561C6CF7423DAA5A1900 /* libz.tbd in Frameworks */,
+				2C6252A92D7C47F99473B4F2 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +277,7 @@
 				32BF3BD52D11464F913E1C60 /* AddressBook.framework */,
 				C1C4D9EF48BD41E6BB3963E8 /* libsqlite3.tbd */,
 				C6084D5734C541C3AFFB7C7D /* libz.tbd */,
+				95E49A951AB34275B034491B /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -315,6 +322,8 @@
 				839582FCD1374C4BB48CA637 /* GCMReceiverDelegate.h */,
 				71164749C60446819BDF6055 /* GCMService.h */,
 				F91C3136114546E7A9E1758C /* GoogleCloudMessaging.h */,
+				A9F08A2EF0034EA4B9537E85 /* OneSignalPush.m */,
+				FFCCE75E4BD74CB08113D4CF /* OneSignalPush.h */,
 			);
 			name = Plugins;
 			path = "CafeApp/Plugins";
@@ -429,6 +438,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				6A47AF824B5A4BC6BBEA34D7 /* AppDelegate+notification.m in Sources */,
 				7165238E96C94649B2331E53 /* PushPlugin.m in Sources */,
+				C24C2C3340CB499AB47A26A8 /* OneSignalPush.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

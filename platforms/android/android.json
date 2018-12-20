@@ -11,6 +11,10 @@
             {
               "xml": "<feature name=\"PushNotification\"><param name=\"android-package\" value=\"com.adobe.phonegap.push.PushPlugin\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"OneSignalPush\"><param name=\"android-package\" value=\"com.plugin.gcm.OneSignalPush\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -55,6 +59,18 @@
             {
               "xml": "<permission android:name=\"${applicationId}.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
               "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"com.amazon.device.messaging.permission.RECEIVE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<permission android:name=\"com.cafeapp.app.permission.RECEIVE_ADM_MESSAGE\" android:protectionLevel=\"signature\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"com.cafeapp.app.permission.RECEIVE_ADM_MESSAGE\" />",
+              "count": 1
             }
           ],
           "/manifest/application": [
@@ -81,6 +97,18 @@
             {
               "xml": "<service android:exported=\"false\" android:name=\"com.adobe.phonegap.push.RegistrationIntentService\" />",
               "count": 1
+            },
+            {
+              "xml": "<amazon:enable-feature android:name=\"com.amazon.device.messaging\" android:required=\"false\" xmlns:amazon=\"http://schemas.amazon.com/apk/res/android\" />",
+              "count": 1
+            },
+            {
+              "xml": "<service android:exported=\"false\" android:name=\"com.onesignal.ADMMessageHandler\" />",
+              "count": 1
+            },
+            {
+              "xml": "<receiver android:name=\"com.onesignal.ADMMessageHandler$Receiver\" android:permission=\"com.amazon.device.messaging.permission.SEND\"><intent-filter><action android:name=\"com.amazon.device.messaging.intent.REGISTRATION\" /><action android:name=\"com.amazon.device.messaging.intent.RECEIVE\" /><category android:name=\"com.cafeapp.app\" /></intent-filter></receiver>",
+              "count": 1
             }
           ]
         }
@@ -90,6 +118,9 @@
   "installed_plugins": {
     "phonegap-plugin-push": {
       "SENDER_ID": "XXXXXXX",
+      "PACKAGE_NAME": "com.cafeapp.app"
+    },
+    "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.cafeapp.app"
     }
   },
@@ -102,9 +133,18 @@
       "clobbers": [
         "PushNotification"
       ]
+    },
+    {
+      "id": "onesignal-cordova-plugin.OneSignal",
+      "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+      "pluginId": "onesignal-cordova-plugin",
+      "clobbers": [
+        "OneSignal"
+      ]
     }
   ],
   "plugin_metadata": {
-    "phonegap-plugin-push": "1.8.4"
+    "phonegap-plugin-push": "1.8.4",
+    "onesignal-cordova-plugin": "2.4.6"
   }
 }
