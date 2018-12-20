@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.cafeapp.cafe" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>helloworld</name>
+    <name>Cafe App</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        App for Café @ Maryland Hall
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="lincolndoney@outlook.com" href="https://lincolnstools.ddns.net">
+        Lincoln Doney
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
