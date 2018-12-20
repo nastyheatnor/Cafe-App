@@ -10,19 +10,10 @@
     "cordova-plugin-battery-status": {
       "PACKAGE_NAME": "com.cafeapp.app"
     },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.cafeapp.app"
-    },
-    "cordova-plugin-compat": {
-      "PACKAGE_NAME": "com.cafeapp.app"
-    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.cafeapp.app"
     },
     "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "com.cafeapp.app"
-    },
-    "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "com.cafeapp.app"
     },
     "cordova-plugin-globalization": {
@@ -31,13 +22,15 @@
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.cafeapp.app"
     },
-    "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "com.cafeapp.app"
-    },
     "cordova-plugin-network-information": {
       "PACKAGE_NAME": "com.cafeapp.app"
     },
     "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.cafeapp.app"
+    },
+    "phonegap-plugin-push": {
+      "ANDROID_SUPPORT_V13_VERSION": "27.+",
+      "FCM_VERSION": "11.8.0",
       "PACKAGE_NAME": "com.cafeapp.app"
     },
     "pushbots-cordova-plugin": {
@@ -45,7 +38,10 @@
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-file": {
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "com.cafeapp.app"
+    },
+    "phonegap-plugin-multidex": {
       "PACKAGE_NAME": "com.cafeapp.app"
     }
   }

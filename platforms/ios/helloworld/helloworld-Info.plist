@@ -56,8 +56,6 @@
     <string/>
     <key>NSPhotoLibraryUsageDescription</key>
     <string/>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string/>
     <key>NSMicrophoneUsageDescription</key>
     <string/>
     <key>UIBackgroundModes</key>
