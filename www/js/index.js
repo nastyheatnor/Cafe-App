@@ -36,6 +36,15 @@ var app = {
         console.log('Received Device Ready Event');
         console.log('calling setup push');
         app.setupPush();
+		
+		var notificationOpenedCallback = function(jsonData) {
+			console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+		};
+
+		window.plugins.OneSignal
+			.startInit("1f0a2765-9bef-403e-a21f-21aa5fe3003e")
+			.handleNotificationOpened(notificationOpenedCallback)
+			.endInit();
     },
     setupPush: function() {
         console.log('calling push init');
