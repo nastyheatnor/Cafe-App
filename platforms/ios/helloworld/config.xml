@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.cafeapp.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.cafeapp.cafe" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
@@ -22,11 +22,21 @@
     <feature name="Battery">
         <param name="ios-package" value="CDVBattery" />
     </feature>
+    <feature name="Camera">
+        <param name="ios-package" value="CDVCamera" />
+    </feature>
     <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
     </feature>
     <feature name="Notification">
         <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <feature name="File">
+        <param name="ios-package" value="CDVFile" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
     </feature>
     <feature name="Globalization">
         <param name="ios-package" value="CDVGlobalization" />
@@ -34,17 +44,14 @@
     <feature name="InAppBrowser">
         <param name="ios-package" value="CDVInAppBrowser" />
     </feature>
+    <feature name="Capture">
+        <param name="ios-package" value="CDVCapture" />
+    </feature>
     <feature name="NetworkStatus">
         <param name="ios-package" value="CDVConnection" />
     </feature>
     <feature name="Vibration">
         <param name="ios-package" value="CDVVibration" />
-    </feature>
-    <feature name="PushbotsPlugin">
-        <param name="ios-package" value="PushbotsPlugin" />
-    </feature>
-    <feature name="PushNotification">
-        <param name="ios-package" value="PushPlugin" />
     </feature>
     <name>helloworld</name>
     <description>
@@ -102,5 +109,12 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
-    <preference name="android-minSdkVersion" value="15" />
+    <preference name="CameraUsesGeolocation" value="false" />
+    <preference name="android-minSdkVersion" value="14" />
+    <feature name="PushNotification">
+        <param name="ios-package" value="PushPlugin" />
+    </feature>
+    <feature name="PushbotsPlugin">
+        <param name="ios-package" value="PushbotsPlugin" />
+    </feature>
 </widget>

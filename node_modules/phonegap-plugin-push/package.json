@@ -1,19 +1,19 @@
 {
-  "_from": "phonegap-plugin-push",
+  "_from": "phonegap-plugin-push@2.2.3",
   "_id": "phonegap-plugin-push@2.2.3",
   "_inBundle": false,
   "_integrity": "sha512-5mjT0G1vfRhXVnZFLwjfzcFwYjVRMibgYDCfYvEujGsP8YwwrIIzcf+xBYAjQV/W2JCjzuNaYd7xJ0yVQaPeig==",
   "_location": "/phonegap-plugin-push",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "phonegap-plugin-push",
+    "raw": "phonegap-plugin-push@2.2.3",
     "name": "phonegap-plugin-push",
     "escapedName": "phonegap-plugin-push",
-    "rawSpec": "",
+    "rawSpec": "2.2.3",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "2.2.3"
   },
   "_requiredBy": [
     "#USER",
@@ -21,7 +21,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/phonegap-plugin-push/-/phonegap-plugin-push-2.2.3.tgz",
   "_shasum": "2d4e728f233321818d6ea588ac35e71b81a03823",
-  "_spec": "phonegap-plugin-push",
+  "_spec": "phonegap-plugin-push@2.2.3",
   "_where": "E:\\Coding\\Cafe-App",
   "author": {
     "name": "Adobe PhoneGap Team"

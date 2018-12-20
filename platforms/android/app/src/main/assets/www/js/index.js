@@ -34,12 +34,11 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-		window.plugins.PushbotsPlugin.initialize("5c1b10410540a3370f310aea", {"android":{"sender_id":"633747534823"}});
+		window.plugins.PushbotsPlugin.initialize("5c1b1da90540a338a7163925", {"android":{"sender_id":"633747534823"}});
 		// Only with First time registration
 		window.plugins.PushbotsPlugin.on("registered", function(token){
 			console.log("Registration Id:" + token);
 		});
-
 		//Get user registrationId/token and userId on PushBots, with evey launch of the app even launching with notification
 		window.plugins.PushbotsPlugin.on("user:ids", function(data){
 			console.log("user:ids" + JSON.stringify(data));
