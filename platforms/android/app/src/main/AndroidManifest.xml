@@ -18,7 +18,7 @@
             </intent-filter>
         </receiver>
     </application>
-    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="27" />
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="27" />
     <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE" />
     <permission android:name="com.cafeapp.app.permission.RECEIVE_ADM_MESSAGE" android:protectionLevel="signature" />
     <uses-permission android:name="com.cafeapp.app.permission.RECEIVE_ADM_MESSAGE" />
