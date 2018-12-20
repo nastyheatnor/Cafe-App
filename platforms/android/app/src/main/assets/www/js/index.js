@@ -36,6 +36,7 @@ var app = {
         app.receivedEvent('deviceready');
 		  var notificationOpenedCallback = function(jsonData) {
 			console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+			alert("Notification recieved!");
 		};
 
 		window.plugins.OneSignal

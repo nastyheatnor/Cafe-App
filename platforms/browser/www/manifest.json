@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Cafe App",
+  "short_name": "Cafe App",
+  "version": "com.cafeapp.cafe",
+  "description": "App for Café @ Maryland Hall",
+  "author": "Lincoln Doney",
+  "icons": [],
+  "start_url": "index.html"
+}

@@ -53,12 +53,15 @@
     <feature name="Vibration">
         <param name="ios-package" value="CDVVibration" />
     </feature>
-    <name>helloworld</name>
+    <feature name="OneSignalPush">
+        <param name="ios-package" value="OneSignalPush" />
+    </feature>
+    <name>Cafe App</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        App for Café @ Maryland Hall
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="lincolndoney@outlook.com" href="https://lincolnstools.ddns.net">
+        Lincoln Doney
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -110,8 +113,5 @@
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="CameraUsesGeolocation" value="false" />
-    <preference name="android-minSdkVersion" value="14" />
-    <feature name="OneSignalPush">
-        <param name="ios-package" value="OneSignalPush" />
-    </feature>
+    <preference name="android-minSdkVersion" value="15" />
 </widget>

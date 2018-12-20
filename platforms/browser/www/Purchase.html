@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="styles.css">
+<script src="javascript.js"></script>
+<script>
+	function sendToServer(method)
+	{
+	    var json = {};
+	    json.id = "";
+	    json.status = "INCOMPLETE";
+	    json.time = new Date().getTime();
+	    json.order = getCart();
+	    json.cost = getTotalPrice();
+            json.paym = method;
+	    json.mechanism = localStorage.getItem("mechanism");
+		localStorage.setItem("paym", method);
+		localStorage.setItem("cost", getTotalPrice());
+	        var xhttp = new XMLHttpRequest();
+	        xhttp.onreadystatechange = function() {
+	                if(this.readyState == 4 && this.status == 200) {
+				localStorage.setItem("id", this.responseText);
+				location.href = "CompleteOrder.html";
+	                }
+	        };
+	        var params = "json=" + JSON.stringify(json);
+	        xhttp.open("POST", getIP() + "phpside.php", true);
+	        xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	        xhttp.send(params);
+	}
+</script>
+<title>Checkout</title>
+</head>
+<body onload="run()">
+<div id="wrapper" style="text-align:center">
+	<h1>Payment Options</h1>
+	<div id="payment-wrap">
+		<button class="purchase-button" onclick="sendToServer('Paypal')">Paypal</button>
+		<button class="purchase-button" onclick="sendToServer('Cash')">Cash</button>
+		<button class="purchase-button" onclick="sendToServer('Credit/Debit')">Credit/Debit</button>
+		<button class="purchase-button" onclick="location.href='Checkout.html'">Go Back</button>
+	</div>
+</div>
+</body>
+</html>
