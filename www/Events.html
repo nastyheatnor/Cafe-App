@@ -11,7 +11,7 @@ function loadevents()
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-	parsethis(this.responseText);
+		parsethis(this.responseText);
     }
   };
   xhttp.open("GET", getIP() + "eventlist.json", true);
@@ -20,7 +20,8 @@ function loadevents()
 
 function parsethis(str)
 {
-
+	var eventstable = document.getElementById("events-table");
+	var json = JSON.parse(this.responseText);
 }
 </script>
 <style>
@@ -42,7 +43,7 @@ tr {
 </head>
 <body style="margin:-5px;">
 <div id="wrapper" onload="loadevents()">
-<table border="1">
+<table border="1" id="events-table">
 </table>
 </div>
 </body>
