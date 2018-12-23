@@ -59,6 +59,10 @@
             {
               "xml": "<feature name=\"OneSignalPush\"><param name=\"android-package\" value=\"com.plugin.gcm.OneSignalPush\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"StripeGoogleApplePay\"><param name=\"android-package\" value=\"stripegoogleapplepay.StripeGoogleApplePay\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -136,6 +140,12 @@
               "xml": "<receiver android:name=\"com.onesignal.ADMMessageHandler$Receiver\" android:permission=\"com.amazon.device.messaging.permission.SEND\"><intent-filter><action android:name=\"com.amazon.device.messaging.intent.REGISTRATION\" /><action android:name=\"com.amazon.device.messaging.intent.RECEIVE\" /><category android:name=\"com.cafeapp.cafe\" /></intent-filter></receiver>",
               "count": 1
             }
+          ],
+          "/*/application": [
+            {
+              "xml": "<meta-data android:name=\"com.google.android.gms.wallet.api.enabled\" android:value=\"true\" />",
+              "count": 1
+            }
           ]
         }
       }
@@ -176,6 +186,12 @@
       "PACKAGE_NAME": "com.cafeapp.cafe"
     },
     "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "cordova-plugin-stripe-google-apple-pay": {
       "PACKAGE_NAME": "com.cafeapp.cafe"
     }
   },
@@ -558,6 +574,20 @@
       "clobbers": [
         "OneSignal"
       ]
+    },
+    {
+      "id": "es6-promise-plugin.Promise",
+      "file": "plugins/es6-promise-plugin/www/promise.js",
+      "pluginId": "es6-promise-plugin",
+      "runs": true
+    },
+    {
+      "id": "cordova-plugin-stripe-google-apple-pay.sgap",
+      "file": "plugins/cordova-plugin-stripe-google-apple-pay/www/stripe-google-apple-pay.js",
+      "pluginId": "cordova-plugin-stripe-google-apple-pay",
+      "clobbers": [
+        "sgap"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -572,6 +602,8 @@
     "cordova-plugin-inappbrowser": "1.7.2",
     "cordova-plugin-network-information": "1.3.4",
     "cordova-plugin-vibration": "2.1.6",
-    "onesignal-cordova-plugin": "2.4.6"
+    "onesignal-cordova-plugin": "2.4.6",
+    "es6-promise-plugin": "4.1.0",
+    "cordova-plugin-stripe-google-apple-pay": "0.0.1"
   }
 }

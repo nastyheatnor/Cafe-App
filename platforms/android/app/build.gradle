@@ -268,6 +268,10 @@ dependencies {
     implementation(project(path: ":CordovaLib"))
     compile "com.android.support:support-v4:24.1.1+"
     compile "com.onesignal:OneSignal:3.10.5"
+    compile "com.stripe:stripe-android:6.1.2"
+    compile "com.google.android.gms:play-services-wallet:15.0.1"
+    compile "com.android.support:support-v4:27.0.2"
+    compile "com.android.support:appcompat-v7:26.0.1"
     // SUB-PROJECT DEPENDENCIES END
 }
 

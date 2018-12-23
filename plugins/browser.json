@@ -39,6 +39,9 @@
     },
     "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "cordova-plugin-stripe-google-apple-pay": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
     }
   },
   "dependent_plugins": {
@@ -46,6 +49,9 @@
       "PACKAGE_NAME": "com.cafeapp.cafe"
     },
     "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "es6-promise-plugin": {
       "PACKAGE_NAME": "com.cafeapp.cafe"
     }
   }

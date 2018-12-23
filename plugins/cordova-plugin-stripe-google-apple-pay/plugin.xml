@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+  xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="cordova-plugin-stripe-google-apple-pay"
+  version="0.0.1"
+  >
+    <name>cordova-plugin-stripe-google-apple-pay</name>
+    <description>Cordova plugin for Google and Apple pay integration</description>
+    <license>MIT</license>
+    <keywords>cordova,stripe,google,apple,pay</keywords>
+    <author>Jack Burgess</author>
+    <repo>https://github.com/jack828/cordova-plugin-stripe-google-apple-pay.git</repo>
+    <issue>https://github.com/jack828/cordova-plugin-stripe-google-apple-pay/issues</issue>
+    <js-module src="www/stripe-google-apple-pay.js" name="sgap">
+        <clobbers target="sgap" />
+    </js-module>
+
+    <dependency id="es6-promise-plugin" version="4.1.0" />
+
+    <platform name="android">
+        <config-file parent="/*/application" target="AndroidManifest.xml">
+            <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true" />
+        </config-file>
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="StripeGoogleApplePay">
+                <param name="android-package" value="stripegoogleapplepay.StripeGoogleApplePay" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/stripegoogleapplepay/StripeGoogleApplePay.java" target-dir="src/android/stripegoogleapplepay" />
+        <framework src="com.stripe:stripe-android:6.1.2" />
+        <framework src="com.google.android.gms:play-services-wallet:15.0.1" />
+        <framework src="com.android.support:support-v4:27.0.2" />
+        <framework src="com.android.support:appcompat-v7:26.0.1" />
+    </platform>
+<!--<platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Device">
+                <param name="ios-package" value="CDVDevice"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVDevice.h" />
+        <source-file src="src/ios/CDVDevice.m" />
+    </platform>-->
+</plugin>
