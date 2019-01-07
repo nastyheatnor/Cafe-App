@@ -152,7 +152,8 @@
 >>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
               "count": 1
             }
-          ]
+          ],
+          "/*/application": []
         }
       }
     }

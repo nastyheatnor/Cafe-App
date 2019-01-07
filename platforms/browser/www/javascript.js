@@ -18,13 +18,12 @@ function retrieveParser()
 	if(xml == null || typeof xml == "undefined")
 	{	var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
-	        	if (this.readyState == 4 && this.status == 200) {
+	        if (this.readyState == 4 && this.status == 200) {
 				xml = this.responseXML;
 			}
-	        };
-		xhttp.withCredentials = true;
-	        xhttp.open("POST", getIP() + "Menu.xml", false);
-	        xhttp.send();
+	    };
+	    xhttp.open("POST", getIP() + "Menu.xml", false);
+	    xhttp.send();
 		return xml.getElementsByTagName("Item");
 	}else
 	{
@@ -326,17 +325,6 @@ function getPrice(id)
 }
 
 function goback()
-	{
-
-		var mechanism = localStorage.getItem("mechanism");
-		if(mechanism === "BFLP")
-		{
-			location.href='BatesLunchProgram.html'
-		}else if(mechanism === "MHC")
-		{
-			location.href='MarylandHallCatering.html'
-		}else if(mechanism === "RP")
-		{
-			location.href='RapidPickup.html'
-		}
-	}
+{
+	location.href='OrderCart.html'
+}

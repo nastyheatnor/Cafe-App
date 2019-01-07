@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="styles.css">
+<!-- <script async src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"></script> -->
+<script src="javascript.js"></script>
+<script>
+function setDateDelivery(type)
+{
+	if(type == "SD")
+	{
+		localStorage.setItem("", "");
+	}else
+	{
+		localStorage.setItem("", "");
+	}
+	location.href="Main.html";
+}
+</script>
+<style>
+	button {
+		height:35.5%;
+		width:100%;
+		color:white;
+		background-color:black;
+		font-size:30px;
+	}
+	.middle-button {
+		color:black;
+		background-color:white;
+	}
+</style>
+<title>DateDelivery</title>
+</head>
+<body>
+<div id="wrapper" style="text-align:center">
+	<div id="payment-wrap">
+		<button onclick="setDateDelivery('IB')">Instant Buy</button>
+		<button class="middle-button" onclick="setDateDelivery('SD')">Schedule Delivery</button>
+		<button onclick="location.href='Home.html'">Back</button>
+	</div>
+</div>
+</body>
+</html>

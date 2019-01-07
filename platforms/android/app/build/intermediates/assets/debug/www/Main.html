@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="styles.css">
+<script>
+function clickbtn(mech)
+{
+ if(mech !== localStorage.getItem("mechanism"))
+ {
+	localStorage.setItem("mechanism", mech);
+	localStorage.setItem("cart", "");
+ }
+ location.href="OrderCart.html";
+}
+</script>
+<title>Main</title>
+</head>
+<body style="margin:-5px;">
+<div id="wrapper" >
+<input id="BFLP" type="image" src="images/Bates_Faculty_Lunch_Program_Bg.png" style="width:110%;height:35%;" onclick="clickbtn('BFLP')">
+<h2 style="top:10%;" onclick="document.getElementById('BFLP').click();">
+<span style="font-size:15px">Bates Faculty Lunch Program</span></h2>
+
+<input id="MHC" type="image" src="images/Md_Hall_Catering_Bg.png" style="width:675px;height:39%;transform: rotate(-6deg) translateX(-130px) translateY(-16%);margin:0px" onclick="clickbtn('MHC')">
+<h2 style="top:50%;"
+onclick="document.getElementById('MHC').click();">
+<span style="font-size:15px">MD Hall Catering</span></h2>
+
+<input id="RPB" type="image" src="images/Rapid_Pickup_Bg.png" style="width:120%;margin-top:-15%;height:45%;" onclick="clickbtn('RP')">
+<h2 style="top:85%;"
+onclick="document.getElementById('RPB').click();">
+<span style="font-size:15px">Rapid Pickup</span></h2>
+
+<div id="logo">
+</div>
+<div id="title">
+Cafe @ Maryland Hall 
+</div>
+</div>
+</body>
+</html>
+

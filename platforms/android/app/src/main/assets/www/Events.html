@@ -1,26 +1,51 @@
-\<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="stylesheet" href="styles.css">
 <title>Events</title>
+<script src="javascript.js"></script>
 <script>
 function loadevents()
 {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-	parsethis(this.responseText);
+		parsethis(this.responseText);
     }
   };
-  xhttp.open("GET", getIP() + "eventlist.json", true);
+  xhttp.open("POST", getIP() + "eventlist.json", true);
   xhttp.send();
 }
 
 function parsethis(str)
 {
-
+	var eventstable = document.getElementById("events-table");
+	var json = JSON.parse(str);
+	for(var i = json.length - 1; i >= 0; i--)
+	{
+		var j = json[i];
+		var row = document.createElement("div");
+		row.className = "row";
+		
+		var titlediv = document.createElement("div");
+		titlediv.className = "title";
+		var title = document.createElement("p");
+		title.innerHTML = "<strong>" + j.name + " (" + j.startdate + "):</strong>";
+		titlediv.appendChild(title);
+		
+		var descdiv = document.createElement("div");
+		descdiv.className = "desc";
+		var desc = document.createElement("p");
+		desc.innerHTML =  "<strong>At " + j.place + "</strong>, " + j.desc;
+		descdiv.appendChild(desc);
+		
+		row.appendChild(titlediv);
+		row.appendChild(descdiv);
+		row.appendChild(document.createElement("hr"));
+		eventstable.appendChild(row);
+	}
 }
 </script>
 <style>
@@ -30,20 +55,49 @@ table {
 	background-color: rgb(0,0,0);
   	background-color: rgba(0,0,0,0.4);
 }
-
-td {
+.row {
+	background-color: rgb(0,0,0);
+  	background-color: rgba(0,0,0,0.4);
 	color:white;
-	font-size:150%;	
 }
-
-tr {
+.title {
+	font-size:20px;
+	height:30%;
+	overflow:hidden;
+	padding-left:10px;
+}
+.desc {
+	font-size:15px;
+	padding-left:10px;
+}
+p {
+	margin-bottom:5px;
+	margin-top:5px;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:black;
+	color:#FFF;
+	border-radius:50px;
+	border-color:transparent;
+	text-align:center;
+	box-shadow: 2px 2px 3px black;
+	z-index:9999;
+	font-size:300%;
 }
 </style>
 </head>
-<body style="margin:-5px;">
-<div id="wrapper" onload="loadevents()">
-<table border="1">
-</table>
+<body style="margin:-5px;" onload="loadevents()">
+<button class="float" onclick="location.href = 'Home.html'"><
+</button>
+<div id="wrapper">
+<h1>Events</h1>
+<div id="events-table">
+</div>
 </div>
 </body>
 </html>

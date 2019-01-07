@@ -17,13 +17,9 @@ function retrieveParser()
 	        xhttp.open("POST", getIP() + "Menu.xml", false);
 	        xhttp.send();
 	        if (this.readyState == 4 && this.status == 200) {
-				xml = this.responseXML;
-			}
-	    };
-		xhttp.withCredentials = true;
-		xhttp.
+			xml = this.responseXML;
+		}
 	    xhttp.open("POST", getIP() + "Menu.xml", false);
-		xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
 	    xhttp.send();
 		return xml.getElementsByTagName("Item");
 	}else
@@ -326,17 +322,6 @@ function getPrice(id)
 }
 
 function goback()
-	{
-
-		var mechanism = localStorage.getItem("mechanism");
-		if(mechanism === "BFLP")
-		{
-			location.href='BatesLunchProgram.html'
-		}else if(mechanism === "MHC")
-		{
-			location.href='MarylandHallCatering.html'
-		}else if(mechanism === "RP")
-		{
-			location.href='RapidPickup.html'
-		}
-	}
+{
+	location.href='OrderCart.html'
+}

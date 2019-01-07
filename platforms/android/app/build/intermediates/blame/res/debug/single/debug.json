@@ -16,12 +16,12 @@
         "source": "E:\\Coding\\Cafe-App\\platforms\\android\\app\\src\\main\\res\\drawable-port-xxhdpi\\screen.png"
     },
     {
-        "merged": "E:\\Coding\\Cafe-App\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\Lincoln\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\186ae7a77725e022064f1c2f32ef6617\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
-    },
-    {
         "merged": "E:\\Coding\\Cafe-App\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
         "source": "C:\\Users\\Lincoln\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\186ae7a77725e022064f1c2f32ef6617\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "E:\\Coding\\Cafe-App\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\Lincoln\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\186ae7a77725e022064f1c2f32ef6617\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "E:\\Coding\\Cafe-App\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_previous_item.png.flat",

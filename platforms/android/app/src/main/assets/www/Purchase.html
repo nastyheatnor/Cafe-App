@@ -4,8 +4,35 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="stylesheet" href="styles.css">
+<!-- <script async src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"></script> -->
 <script src="javascript.js"></script>
 <script>
+/*
+	function onGooglePayLoaded() {
+		const googlePayClient = 
+			new google.payments.api.PaymentsClient({
+				environment: "TEST"
+			});
+		const clientConfiguration = {
+			apiVersion: 2,
+			apiVersionMinor: 0,
+			allowedPaymentMethods: [cardPaymentMethod]
+		};
+		googlePayClient.isReadyToPay(clientConfiguration)
+			.then(function(response) {
+				if(response.result) {
+					googlePayClient.createButton({
+					buttonColor:'default',
+					buttonType:'long',
+					onClick: onGooglePaymentsButtonClicked
+					});
+				}
+			}).catch(function(err) {
+			
+			});
+	}
+*/
+
 	function sendToServer(method)
 	{
 	    var json = {};
@@ -33,13 +60,13 @@
 </script>
 <title>Checkout</title>
 </head>
-<body onload="run()">
+<body>
 <div id="wrapper" style="text-align:center">
 	<h1>Payment Options</h1>
 	<div id="payment-wrap">
 		<button class="purchase-button" onclick="sendToServer('Paypal')">Paypal</button>
-		<button class="purchase-button" onclick="sendToServer('Cash')">Cash</button>
-		<button class="purchase-button" onclick="sendToServer('Credit/Debit')">Credit/Debit</button>
+		<button class="purchase-button" onclick="sendToServer('Square')">Square</button>
+		<button class="purchase-button" onclick="sendToServer('Google/Apple Pay')">Google/Apple Pay</button>
 		<button class="purchase-button" onclick="location.href='Checkout.html'">Go Back</button>
 	</div>
 </div>

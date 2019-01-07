@@ -385,6 +385,20 @@ module.exports = [
       "OneSignal"
 >>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
     ]
+  },
+  {
+    "id": "es6-promise-plugin.Promise",
+    "file": "plugins/es6-promise-plugin/www/promise.js",
+    "pluginId": "es6-promise-plugin",
+    "runs": true
+  },
+  {
+    "id": "cordova-plugin-stripe-google-apple-pay.sgap",
+    "file": "plugins/cordova-plugin-stripe-google-apple-pay/www/stripe-google-apple-pay.js",
+    "pluginId": "cordova-plugin-stripe-google-apple-pay",
+    "clobbers": [
+      "sgap"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -404,8 +418,14 @@ module.exports.metadata =
   "cordova-plugin-inappbrowser": "1.7.2",
   "cordova-plugin-network-information": "1.3.4",
   "cordova-plugin-vibration": "2.1.6",
+<<<<<<< HEAD
   "onesignal-cordova-plugin": "2.4.6"
 >>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
+=======
+  "onesignal-cordova-plugin": "2.4.6",
+  "es6-promise-plugin": "4.1.0",
+  "cordova-plugin-stripe-google-apple-pay": "0.0.1"
+>>>>>>> 1f12ca842e43bc98c9c9362e12e5debb9218603c
 };
 // BOTTOM OF METADATA
 });
