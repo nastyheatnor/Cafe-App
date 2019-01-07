@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		id        = ""
+		versionCode=""
+		version   = "">
+		<name>CafeApp</name>
+		<description>App for Cafe</description>
+		<preference name="phonegap-version" value="cli-6.5.0"/>
+		<author href="" email="lincolndoney@outlook.com">Lincoln Doney</author>
+		<feature name="http://api.phonegap.com/1.0/battery" />
+		<feature name="http://api.phonegap.com/1.0/camera" />
+		<feature name="http://api.phonegap.com/1.0/contacts" />
+		<feature name="http://api.phonegap.com/1.0/file" />
+		<feature name="http://api.phonegap.com/1.0/geolocation" />
+		<feature name="http://api.phonegap.com/1.0/media" />
+		<feature name="http://api.phonegap.com/1.0/network" />
+		<feature name="http://api.phonegap.com/1.0/notification" />
+		<preference name="android-build-tool" value="gradle" />
+		<preference name="orientation" value="default" />
+		<preference name="fullscreen" value="false" />
+		<preference name="target-device" value="universal" />
+		<preference name="webviewbounce" value="true" />
+		<preference name="prerendered-icon" value="false" />
+		<preference name="stay-in-webview" value="true" />
+		<preference name="ios-statusbarstyle" value="default" />
+		<preference name="detect-data-types" value="true" />
+		<preference name="exit-on-suspend" value="true" />
+		<preference name="show-splash-screen-spinner" value="true" />
+		<preference name="auto-hide-splash-screen" value="true" />
+		<preference name="FadeSplashScreen " value="true" />
+		<preference name="EnableViewportScale" value="false" />
+		<preference name="MediaPlaybackRequiresUserAction" value="false" />
+		<preference name="AllowInlineMediaPlayback" value="true" />
+		<preference name="BackupWebStorage" value="none" />
+		<preference name="TopActivityIndicator" value="white" />
+		<preference name="KeyboardDisplayRequiresUserAction" value="true" />
+		<preference name="KeyboardShrinksView " value="true" />
+		<preference name="HideKeyboardFormAccessoryBar" value="true" />
+		<preference name="SuppressesIncrementalRendering" value="false" />
+		<preference name="windows-identity-name" value="" />
+		<preference name="android-installLocation" value="auto" />
+		<preference name="SplashScreenDelay" value="2000" />
+		<preference name="ErrorUrl" value="null" />
+		<preference name="BackgroundColor" value="0x000000" />
+		<preference name="DisallowOverscroll" value="true" />
+		<preference name="LoadingDialog" value="," />
+		<preference name="LoadUrlTimeoutValue" value="null" />
+		<platform name="ios">
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo57.png" width="57" height="57" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo144.png" width="144" height="144" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo72.png" width="72" height="72" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo114.png" width="114" height="114" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo100.png" width="100" height="100" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo60.png" width="60" height="60" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo120.png" width="120" height="120" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo180.png" width="180" height="180" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo76.png" width="76" height="76" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo152.png" width="152" height="152" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo29.png" width="29" height="29" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo58.png" width="58" height="58" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo87.png" width="87" height="87" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo40.png" width="40" height="40" />
+		</platform>
+		<platform name="android">
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo36.png" qualifier="ldpi" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo48.png" qualifier="mdpi" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo72.png" qualifier="hdpi" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo96.png" qualifier="xhdpi" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo144.png" qualifier="xxhdpi" />
+		<icon src="file://C:\Users\Lincoln\Pictures\Cafe\logo192.png" qualifier="xxxhdpi" />
+		</platform>
+		<platform name="winphone">
+		</platform>
+		<gap:plugin name="com.pushbots.push" version="1.2.1" source="plugins.cordova.io"/>
+		 <icon src="icon.png" />
+		 <access origin="*"/>
+		</widget>

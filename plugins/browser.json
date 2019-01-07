@@ -7,9 +7,54 @@
     "files": {}
   },
   "installed_plugins": {
+<<<<<<< HEAD
     "pushbots-cordova-plugin": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     }
   },
   "dependent_plugins": {}
+=======
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.cafeapp.cafe"
+    }
+  }
+>>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
 }

@@ -1,9 +1,3 @@
-if(PushbotsPlugin.isIOS) {
-	PushbotsPlugin.initializeiOS("5c180f800540a37cd570ccdf");
-}
-if(PushbotsPlugin.isAndroid) {
-	PushbotsPlugin.initializeAndroid("5c180f800540a37cd570ccdf", "633747534823");
-}
 var xml;
 function getIP()
 {
@@ -22,6 +16,15 @@ function retrieveParser()
 		xhttp.withCredentials = true;
 	        xhttp.open("POST", getIP() + "Menu.xml", false);
 	        xhttp.send();
+	        if (this.readyState == 4 && this.status == 200) {
+				xml = this.responseXML;
+			}
+	    };
+		xhttp.withCredentials = true;
+		xhttp.
+	    xhttp.open("POST", getIP() + "Menu.xml", false);
+		xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
+	    xhttp.send();
 		return xml.getElementsByTagName("Item");
 	}else
 	{

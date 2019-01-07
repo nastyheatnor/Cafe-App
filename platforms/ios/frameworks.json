@@ -1,4 +1,13 @@
 {
+<<<<<<< HEAD
     "SystemConfiguration.framework": 1,
+=======
+    "ImageIO.framework": 1,
+    "CoreLocation.framework": 2,
+    "AVFoundation.framework": 1,
+    "libz.tbd": 1,
+    "AudioToolbox.framework": 2,
+    "SystemConfiguration.framework": 2,
+>>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
     "CoreTelephony.framework": 1
 }

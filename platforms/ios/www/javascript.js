@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 if(PushbotsPlugin.isIOS) {
 	PushbotsPlugin.initializeiOS("5c180f800540a37cd570ccdf");
 }
 if(PushbotsPlugin.isAndroid) {
 	PushbotsPlugin.initializeAndroid("5c180f800540a37cd570ccdf", "633747534823");
 }
+=======
+>>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
 var xml;
 function getIP()
 {
