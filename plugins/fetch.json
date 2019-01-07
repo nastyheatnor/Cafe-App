@@ -103,14 +103,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-stripe-google-apple-pay": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-stripe-google-apple-pay"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "es6-promise-plugin": {
     "source": {
       "type": "registry",

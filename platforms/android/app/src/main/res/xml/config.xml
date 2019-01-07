@@ -38,10 +38,6 @@
     <feature name="OneSignalPush">
         <param name="android-package" value="com.plugin.gcm.OneSignalPush" />
     </feature>
-    <feature name="StripeGoogleApplePay">
-        <param name="android-package" value="stripegoogleapplepay.StripeGoogleApplePay" />
-        <param name="onload" value="true" />
-    </feature>
     <name>Cafe App</name>
     <description>
         App for Café @ Maryland Hall
