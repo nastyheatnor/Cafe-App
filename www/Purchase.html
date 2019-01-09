@@ -42,10 +42,21 @@ if(method != null && method != "")
 	    var json = {};
 	    json.id = "";
 	    json.status = "INCOMPLETE";
-	    json.time = new Date().getTime();
+	    if(localStorage.getItem("Stor") == "GN")
+	    {
+		    json.time = new Date().getTime();
+		    json.sched = "GN";
+	    }
+	    else
+	    {
+		    var dt = new Date(document.getElementById("date-later").value);
+		    json.time = dt.getTime();
+		    json.sched = "GL";
+	    }
 	    json.order = getCart();
 	    json.cost = getTotalPrice();
             json.paym = method;
+
 	    json.mechanism = localStorage.getItem("mechanism");
 		localStorage.setItem("paym", json.paym);
 		localStorage.setItem("cost", getTotalPrice());
@@ -67,13 +78,23 @@ else
 	alert("You must select a Payment Method!!");
 }
 	}
-
-	function setPaym(str)
+	function setPaym(elem)
 	{
-		var text = document.getElementById("paytext").getElementsByTagName("span")[0];
-		text.innerHTML = str;
-	}
+		var elist = document.getElementsByClassName("meth");
+		for(var i = 0; i < elist.length; i++)
+		{
+			elist[i].style.color = "white";
+		}
+		elem.style.color = "green";
+		setPaymTxt(elem.innerHTML);
 
+	}
+	function setPaymTxt(str)
+	{
+		var text = document.getElementById("paytext");
+		text.style.color = "green";
+		text.innerHTML = "Pay using: <span>" + str + "</span>";
+	}
 	function setSched(str)
 	{
 		var subsect = document.getElementById("purchase-subsect");
@@ -87,24 +108,33 @@ else
 			var GNel = document.createElement("div");
 			GNel.id = "GetMain";
 			var p = document.createElement("p");
-			p.innerHTML = "Will Purchase Now!";			
+			p.innerHTML = "Purchase Now!";			
 			GNel.appendChild(p);
 			subsect.appendChild(GNel);
 			GNBtn.style.color = "green";
 			GLBtn.style.color = "white";
+			localStorage.setItem("Stor", "GN");
 		}else if(str == "GL")
 		{
 			//Get Later
 			var GLel = document.createElement("div");
 			GLel.id = "GetMain";			
 			var inpt = document.createElement("input");
-			inpt.type = "date";
+			inpt.type = "datetime-local";
 			inpt.id = "date-later";
-			inpt.valueAsDate = new Date();
+			var date = new Date();
+			var day = date.getDate();
+			var month = date.getMonth() + 1;
+			var year = date.getFullYear();
+			if (month < 10) month = "0" + month;
+			if (day < 10) day = "0" + day;
+			var today = year + "-" + month + "-" + day + "T12:00";      
+			inpt.value = today;
 
 			var label = document.createElement("label");
 			label.for = "GLDate";
-			label.innerHTML = "Purchase Date:";
+			label.innerHTML = "Buy On: ";
+
 			GLel.appendChild(label);
 			GLel.appendChild(inpt);
 			subsect.appendChild(GLel);
@@ -112,6 +142,7 @@ else
 			GLBtn.style.color = "green";
 			GNBtn.style.color = "white";
 
+			localStorage.setItem("Stor", "");
 		}
 	}
 </script>
@@ -122,7 +153,7 @@ else
     margin-top:0px;
     border-left: white 2.5px solid;
     border-right: white 2.5px solid;
-    color: green;
+    color: red;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
 }
@@ -141,6 +172,9 @@ else
     padding-bottom: 15px;
 }
 
+.purchase-button {
+    height:50px;
+}
 </style>
 <title>Checkout</title>
 </head>
@@ -148,23 +182,29 @@ else
 <div id="wrapper" style="text-align:center">
 	<div id="payment-wrap">
 		<h1>Payment Method</h1>
-		<button id="ppl" class="purchase-button" onclick="setPaym('Paypal')">Paypal</button>
-		<button id="sqr" class="purchase-button" onclick="setPaym('Square')">Square</button>
-		<button id="gp"  class="purchase-button" onclick="setPaym('Google/Apple Pay')">Google/Apple Pay</button>
+		<button id="ppl" class="purchase-button meth" onclick="setPaym(this)">Paypal</button>
+		<button id="sqr" class="purchase-button meth" onclick="setPaym(this)">Square</button>
+		<button id="gp"  class="purchase-button meth" onclick="setPaym(this)">Google/Apple Pay</button>
 
-		<br><br>
+		<br><br><br><br>
 
 		<div>
 			<h1>Purchase Schedule</h1>
-			<button class="purchase-button" id="GNBtn" onclick="setSched('GN')">Get it now!</button>
-			<button class="purchase-button" id="GLBtn" onclick="setSched('GL')">Get it later!</button>
+			<button class="purchase-button sch" id="GNBtn" onclick="setSched('GN')">Get it now!</button>
+			<button class="purchase-button sch" id="GLBtn" onclick="setSched('GL')">Get it later!</button>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
 			<div id="purchase-subsect" style="color:red">
 				<div id="GetMain">
 					No Order Time Selected
 				</div>
 			</div>
 		</div>
-		<p id="paytext">Pay using: <span></span></p>
+		<p id="paytext">No payment method<span> selected</span></p>
 		<button class="purchase-button" onclick="sendToServer()">Confirm</button>
 		<button class="purchase-button" onclick="location.href='Checkout.html'">Go Back</button>
 	</div>
