@@ -1,27 +1,7 @@
 {
-<<<<<<< HEAD
-  "name": "com.cafe.cafeapp",
-  "version": "1.0.0",
-  "displayName": "Cafe App",
-  "cordova": {
-    "platforms": [
-      "ios",
-      "android",
-      "browser"
-    ],
-    "plugins": {
-      "pushbots-cordova-plugin": {}
-    }
-  },
-  "dependencies": {
-    "cordova-android": "^7.1.4",
-    "cordova-browser": "^5.0.4",
-    "cordova-ios": "^4.5.5",
-    "pushbots-cordova-plugin": "1.6.0"
-=======
   "name": "com.cafeapp.cafe",
   "version": "1.0.0",
-  "displayName": "helloworld",
+  "displayName": "Cafe App",
   "cordova": {
     "platforms": [
       "android",
@@ -56,12 +36,6 @@
     "cordova-plugin-media-capture": "~1.4.3",
     "cordova-plugin-network-information": "~1.3.3",
     "cordova-plugin-vibration": "~2.1.5",
-<<<<<<< HEAD
-    "onesignal-cordova-plugin": "2.4.6",
-    "cordova-ios": "~4.5.5"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
-=======
     "onesignal-cordova-plugin": "2.4.6"
->>>>>>> 1f12ca842e43bc98c9c9362e12e5debb9218603c
   }
 }
