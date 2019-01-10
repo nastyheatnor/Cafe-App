@@ -3,14 +3,6 @@ function getIP()
 {
 	return "http://100.16.105.198/cafe/CafeAppServer/";
 }
-
-function getFileFromServer(url)
-{
-	var s = document.createElement("script");
-	s.src = "jsonp.php?url=" + url;
-	document.body.appendChild(s);
-}
-
 function retrieveParser()
 {
 	if(xml == null || typeof xml == "undefined")
@@ -20,7 +12,6 @@ function retrieveParser()
 				xml = this.responseXML;
 			}
 	        };
-		xhttp.withCredentials = true;
 	        xhttp.open("POST", getIP() + "Menu.xml", false);
 	        xhttp.send();
 	        if (this.readyState == 4 && this.status == 200) {
