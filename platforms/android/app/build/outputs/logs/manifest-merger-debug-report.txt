@@ -123,7 +123,7 @@ MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] C:\Users
 		ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:5:18-52
 	android:icon
 		ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:5:53-80
-activity#com.cafeapp.cafe.MainActivity
+activity#com.cafe.cafeapp.MainActivity
 ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:6:9-11:20
 	android:label
 		ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:6:97-134
@@ -169,7 +169,7 @@ ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml
 		ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:17:75-139
 	android:name
 		ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:17:19-74
-intent-filter#com.amazon.device.messaging.intent.RECEIVE+com.amazon.device.messaging.intent.REGISTRATION+com.cafeapp.cafe
+intent-filter#com.amazon.device.messaging.intent.RECEIVE+com.amazon.device.messaging.intent.REGISTRATION+com.cafe.cafeapp
 ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:18:13-22:29
 action#com.amazon.device.messaging.intent.REGISTRATION
 ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:19:17-90
@@ -179,7 +179,7 @@ action#com.amazon.device.messaging.intent.RECEIVE
 ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:20:17-85
 	android:name
 		ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:20:25-82
-category#com.cafeapp.cafe
+category#com.cafe.cafeapp
 ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:21:17-61
 	android:name
 		ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:21:27-58
@@ -293,13 +293,13 @@ uses-permission#com.amazon.device.messaging.permission.RECEIVE
 ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:35:5-86
 	android:name
 		ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:35:22-83
-permission#com.cafeapp.cafe.permission.RECEIVE_ADM_MESSAGE
+permission#com.cafe.cafeapp.permission.RECEIVE_ADM_MESSAGE
 ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:36:5-118
 	android:protectionLevel
 		ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:36:80-115
 	android:name
 		ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:36:17-79
-uses-permission#com.cafeapp.cafe.permission.RECEIVE_ADM_MESSAGE
+uses-permission#com.cafe.cafeapp.permission.RECEIVE_ADM_MESSAGE
 ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:37:5-87
 	android:name
 		ADDED from E:\Coding\Cafe-App\platforms\android\app\src\main\AndroidManifest.xml:37:22-84
@@ -317,7 +317,7 @@ MERGED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\Lincoln\.gradle\c
 		ADDED from [com.onesignal:OneSignal:3.10.5] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\OneSignal-3.10.5.aar\8c3effbb7261e4ae4c7020fa86a84cc1\AndroidManifest.xml:10:9-44
 	android:name
 		ADDED from [com.onesignal:OneSignal:3.10.5] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\OneSignal-3.10.5.aar\8c3effbb7261e4ae4c7020fa86a84cc1\AndroidManifest.xml:9:9-63
-permission#com.cafeapp.cafe.permission.C2D_MESSAGE
+permission#com.cafe.cafeapp.permission.C2D_MESSAGE
 ADDED from [com.onesignal:OneSignal:3.10.5] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\OneSignal-3.10.5.aar\8c3effbb7261e4ae4c7020fa86a84cc1\AndroidManifest.xml:8:5-10:47
 MERGED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\3460a54161e7e5e2441ff4656f8c7e93\AndroidManifest.xml:28:5-30:47
 MERGED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\3460a54161e7e5e2441ff4656f8c7e93\AndroidManifest.xml:28:5-30:47
@@ -331,7 +331,7 @@ MERGED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\Lincoln\.gradle\c
 MERGED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\3460a54161e7e5e2441ff4656f8c7e93\AndroidManifest.xml:32:5-79
 	android:name
 		ADDED from [com.onesignal:OneSignal:3.10.5] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\OneSignal-3.10.5.aar\8c3effbb7261e4ae4c7020fa86a84cc1\AndroidManifest.xml:12:22-76
-uses-permission#com.cafeapp.cafe.permission.C2D_MESSAGE
+uses-permission#com.cafe.cafeapp.permission.C2D_MESSAGE
 ADDED from [com.onesignal:OneSignal:3.10.5] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\OneSignal-3.10.5.aar\8c3effbb7261e4ae4c7020fa86a84cc1\AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\3460a54161e7e5e2441ff4656f8c7e93\AndroidManifest.xml:32:5-79
 MERGED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\3460a54161e7e5e2441ff4656f8c7e93\AndroidManifest.xml:32:5-79
@@ -439,7 +439,7 @@ intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
 ADDED from [com.onesignal:OneSignal:3.10.5] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\OneSignal-3.10.5.aar\8c3effbb7261e4ae4c7020fa86a84cc1\AndroidManifest.xml:63:13-67:29
 	android:priority
 		ADDED from [com.onesignal:OneSignal:3.10.5] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\OneSignal-3.10.5.aar\8c3effbb7261e4ae4c7020fa86a84cc1\AndroidManifest.xml:63:28-50
-intent-filter#com.cafeapp.cafe+com.google.android.c2dm.intent.RECEIVE
+intent-filter#com.cafe.cafeapp+com.google.android.c2dm.intent.RECEIVE
 ADDED from [com.onesignal:OneSignal:3.10.5] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\OneSignal-3.10.5.aar\8c3effbb7261e4ae4c7020fa86a84cc1\AndroidManifest.xml:63:13-67:29
 	android:priority
 		ADDED from [com.onesignal:OneSignal:3.10.5] C:\Users\Lincoln\.gradle\caches\transforms-1\files-1.1\OneSignal-3.10.5.aar\8c3effbb7261e4ae4c7020fa86a84cc1\AndroidManifest.xml:63:28-50

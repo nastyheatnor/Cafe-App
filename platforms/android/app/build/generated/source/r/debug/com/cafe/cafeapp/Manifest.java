@@ -5,15 +5,15 @@
  * should not be modified by hand.
  */
 
-package com.cafeapp.cafe;
+package com.cafe.cafeapp;
 
 public final class Manifest {
   public static final class permission {
-    public static final String RECEIVE_ADM_MESSAGE="com.cafeapp.cafe.permission.RECEIVE_ADM_MESSAGE";
+    public static final String RECEIVE_ADM_MESSAGE="com.cafe.cafeapp.permission.RECEIVE_ADM_MESSAGE";
     /**
      * Create a unique permission for your app and use it so only your app can receive your OneSignal messages.
      */
-    public static final String C2D_MESSAGE="com.cafeapp.cafe.permission.C2D_MESSAGE";
+    public static final String C2D_MESSAGE="com.cafe.cafeapp.permission.C2D_MESSAGE";
   }
 
 }
