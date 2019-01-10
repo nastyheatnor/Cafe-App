@@ -9,9 +9,6 @@
         "parents": {
           "/*": [
             {
-<<<<<<< HEAD
-              "xml": "<feature name=\"PushbotsPlugin\"><param name=\"ios-package\" value=\"PushbotsPlugin\" /></feature>",
-=======
               "xml": "<feature name=\"Battery\"><param name=\"ios-package\" value=\"CDVBattery\" /></feature>",
               "count": 1
             },
@@ -61,7 +58,6 @@
             },
             {
               "xml": "<feature name=\"OneSignalPush\"><param name=\"ios-package\" value=\"OneSignalPush\" /></feature>",
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
               "count": 1
             }
           ]
@@ -69,8 +65,6 @@
       },
       "*-Info.plist": {
         "parents": {
-<<<<<<< HEAD
-=======
           "NSCameraUsageDescription": [
             {
               "xml": "<string> </string>",
@@ -99,7 +93,6 @@
               "count": 1
             }
           ],
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
           "UIBackgroundModes": [
             {
               "xml": "<array><string>remote-notification</string></array>",
@@ -108,11 +101,7 @@
           ]
         }
       },
-<<<<<<< HEAD
-      "*/Entitlements-Debug.plist": {
-=======
       "*-Debug.plist": {
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
         "parents": {
           "aps-environment": [
             {
@@ -122,11 +111,7 @@
           ]
         }
       },
-<<<<<<< HEAD
-      "*/Entitlements-Release.plist": {
-=======
       "*-Release.plist": {
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
         "parents": {
           "aps-environment": [
             {
@@ -139,67 +124,55 @@
     }
   },
   "installed_plugins": {
-<<<<<<< HEAD
-    "pushbots-cordova-plugin": {
-      "PACKAGE_NAME": "com.cafe.cafeapp"
-=======
     "cordova-plugin-battery-status": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-compat": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-camera": {
       "CAMERA_USAGE_DESCRIPTION": " ",
       "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-geolocation": {
       "GEOLOCATION_USAGE_DESCRIPTION": " ",
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-globalization": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-media-capture": {
       "CAMERA_USAGE_DESCRIPTION": " ",
       "MICROPHONE_USAGE_DESCRIPTION": " ",
       "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "onesignal-cordova-plugin": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     }
   },
   "dependent_plugins": {},
   "modules": [
     {
-<<<<<<< HEAD
-      "id": "pushbots-cordova-plugin.PushbotsPlugin",
-      "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
-      "pluginId": "pushbots-cordova-plugin",
-      "clobbers": [
-        "PushbotsPlugin"
-=======
       "id": "cordova-plugin-battery-status.battery",
       "file": "plugins/cordova-plugin-battery-status/www/battery.js",
       "pluginId": "cordova-plugin-battery-status",
@@ -579,14 +552,10 @@
       "pluginId": "onesignal-cordova-plugin",
       "clobbers": [
         "OneSignal"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
       ]
     }
   ],
   "plugin_metadata": {
-<<<<<<< HEAD
-    "pushbots-cordova-plugin": "1.6.0"
-=======
     "cordova-plugin-battery-status": "1.2.5",
     "cordova-plugin-compat": "1.2.0",
     "cordova-plugin-camera": "2.4.1",
@@ -600,6 +569,5 @@
     "cordova-plugin-network-information": "1.3.4",
     "cordova-plugin-vibration": "2.1.6",
     "onesignal-cordova-plugin": "2.4.6"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
   }
 }

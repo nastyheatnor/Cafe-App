@@ -91,11 +91,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-<<<<<<< HEAD
-apply from: "../pushbots-cordova-plugin/cafeapp-build-extras.gradle"
-=======
-apply from: "../onesignal-cordova-plugin/cafe-build-extras-onesignal.gradle"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
+apply from: "../onesignal-cordova-plugin/cafeapp-build-extras-onesignal.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
@@ -270,12 +266,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
-<<<<<<< HEAD
-    compile "com.pushbots:pushbots-lib:3.2.0-c@aar"
-=======
     compile "com.android.support:support-v4:24.1.1+"
     compile "com.onesignal:OneSignal:3.10.5"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
     // SUB-PROJECT DEPENDENCIES END
 }
 

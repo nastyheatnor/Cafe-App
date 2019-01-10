@@ -7,11 +7,6 @@
     "files": {
       "res/xml/config.xml": {
         "parents": {
-<<<<<<< HEAD
-          "/widget": [
-            {
-              "xml": "<feature name=\"PushbotsPlugin\"><param name=\"android-package\" value=\"com.pushbots.plugin.PushbotsPlugin\" /></feature>",
-=======
           "/*": [
             {
               "xml": "<feature name=\"Battery\"><param name=\"android-package\" value=\"org.apache.cordova.batterystatus.BatteryListener\" /></feature>",
@@ -63,7 +58,6 @@
             },
             {
               "xml": "<feature name=\"OneSignalPush\"><param name=\"android-package\" value=\"com.plugin.gcm.OneSignalPush\" /></feature>",
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
               "count": 1
             }
           ]
@@ -71,8 +65,6 @@
       },
       "AndroidManifest.xml": {
         "parents": {
-<<<<<<< HEAD
-=======
           "/*": [
             {
               "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
@@ -113,33 +105,26 @@
               "count": 1
             }
           ],
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
           "/manifest": [
             {
               "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
               "count": 1
-<<<<<<< HEAD
-=======
             },
             {
               "xml": "<uses-permission android:name=\"com.amazon.device.messaging.permission.RECEIVE\" />",
               "count": 1
             },
             {
-              "xml": "<permission android:name=\"com.cafeapp.cafe.permission.RECEIVE_ADM_MESSAGE\" android:protectionLevel=\"signature\" />",
+              "xml": "<permission android:name=\"com.cafe.cafeapp.permission.RECEIVE_ADM_MESSAGE\" android:protectionLevel=\"signature\" />",
               "count": 1
             },
             {
-              "xml": "<uses-permission android:name=\"com.cafeapp.cafe.permission.RECEIVE_ADM_MESSAGE\" />",
+              "xml": "<uses-permission android:name=\"com.cafe.cafeapp.permission.RECEIVE_ADM_MESSAGE\" />",
               "count": 1
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
             }
           ],
           "/manifest/application": [
             {
-<<<<<<< HEAD
-              "xml": "<receiver android:name=\"com.pushbots.plugin.PushHandler\" />",
-=======
               "xml": "<amazon:enable-feature android:name=\"com.amazon.device.messaging\" android:required=\"false\" xmlns:amazon=\"http://schemas.amazon.com/apk/res/android\" />",
               "count": 1
             },
@@ -148,69 +133,55 @@
               "count": 1
             },
             {
-              "xml": "<receiver android:name=\"com.onesignal.ADMMessageHandler$Receiver\" android:permission=\"com.amazon.device.messaging.permission.SEND\"><intent-filter><action android:name=\"com.amazon.device.messaging.intent.REGISTRATION\" /><action android:name=\"com.amazon.device.messaging.intent.RECEIVE\" /><category android:name=\"com.cafeapp.cafe\" /></intent-filter></receiver>",
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
+              "xml": "<receiver android:name=\"com.onesignal.ADMMessageHandler$Receiver\" android:permission=\"com.amazon.device.messaging.permission.SEND\"><intent-filter><action android:name=\"com.amazon.device.messaging.intent.REGISTRATION\" /><action android:name=\"com.amazon.device.messaging.intent.RECEIVE\" /><category android:name=\"com.cafe.cafeapp\" /></intent-filter></receiver>",
               "count": 1
             }
-          ],
-          "/*/application": []
+          ]
         }
       }
     }
   },
   "installed_plugins": {
-<<<<<<< HEAD
-    "pushbots-cordova-plugin": {
-      "PACKAGE_NAME": "com.cafe.cafeapp"
-=======
     "cordova-plugin-battery-status": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-globalization": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "onesignal-cordova-plugin": {
-      "PACKAGE_NAME": "com.cafeapp.cafe"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
+      "PACKAGE_NAME": "com.cafe.cafeapp"
     }
   },
   "dependent_plugins": {},
   "modules": [
     {
-<<<<<<< HEAD
-      "id": "pushbots-cordova-plugin.PushbotsPlugin",
-      "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
-      "pluginId": "pushbots-cordova-plugin",
-      "clobbers": [
-        "PushbotsPlugin"
-=======
       "id": "cordova-plugin-battery-status.battery",
       "file": "plugins/cordova-plugin-battery-status/www/battery.js",
       "pluginId": "cordova-plugin-battery-status",
@@ -586,14 +557,10 @@
       "pluginId": "onesignal-cordova-plugin",
       "clobbers": [
         "OneSignal"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
       ]
     }
   ],
   "plugin_metadata": {
-<<<<<<< HEAD
-    "pushbots-cordova-plugin": "1.6.0"
-=======
     "cordova-plugin-battery-status": "1.2.5",
     "cordova-plugin-camera": "2.4.1",
     "cordova-plugin-file": "4.3.3",
@@ -606,6 +573,5 @@
     "cordova-plugin-network-information": "1.3.4",
     "cordova-plugin-vibration": "2.1.6",
     "onesignal-cordova-plugin": "2.4.6"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
   }
 }

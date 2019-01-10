@@ -1,13 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
-<<<<<<< HEAD
-    "id": "pushbots-cordova-plugin.PushbotsPlugin",
-    "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
-    "pluginId": "pushbots-cordova-plugin",
-    "clobbers": [
-      "PushbotsPlugin"
-=======
     "id": "cordova-plugin-battery-status.battery",
     "file": "plugins/cordova-plugin-battery-status/www/battery.js",
     "pluginId": "cordova-plugin-battery-status",
@@ -383,30 +376,12 @@ module.exports = [
     "pluginId": "onesignal-cordova-plugin",
     "clobbers": [
       "OneSignal"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
-    ]
-  },
-  {
-    "id": "es6-promise-plugin.Promise",
-    "file": "plugins/es6-promise-plugin/www/promise.js",
-    "pluginId": "es6-promise-plugin",
-    "runs": true
-  },
-  {
-    "id": "cordova-plugin-stripe-google-apple-pay.sgap",
-    "file": "plugins/cordova-plugin-stripe-google-apple-pay/www/stripe-google-apple-pay.js",
-    "pluginId": "cordova-plugin-stripe-google-apple-pay",
-    "clobbers": [
-      "sgap"
     ]
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-<<<<<<< HEAD
-  "pushbots-cordova-plugin": "1.6.0"
-=======
   "cordova-plugin-battery-status": "1.2.5",
   "cordova-plugin-camera": "2.4.1",
   "cordova-plugin-file": "4.3.3",
@@ -418,14 +393,7 @@ module.exports.metadata =
   "cordova-plugin-inappbrowser": "1.7.2",
   "cordova-plugin-network-information": "1.3.4",
   "cordova-plugin-vibration": "2.1.6",
-<<<<<<< HEAD
   "onesignal-cordova-plugin": "2.4.6"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
-=======
-  "onesignal-cordova-plugin": "2.4.6",
-  "es6-promise-plugin": "4.1.0",
-  "cordova-plugin-stripe-google-apple-pay": "0.0.1"
->>>>>>> 1f12ca842e43bc98c9c9362e12e5debb9218603c
 };
 // BOTTOM OF METADATA
 });

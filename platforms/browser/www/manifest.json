@@ -3,15 +3,12 @@
   "display": "standalone",
   "name": "Cafe App",
   "short_name": "Cafe App",
-<<<<<<< HEAD
   "version": "com.cafe.cafeapp",
   "description": "A blank PhoneGap app.",
   "author": "PhoneGap Team",
-=======
   "version": "com.cafeapp.cafe",
   "description": "App for Café @ Maryland Hall",
   "author": "Lincoln Doney",
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
   "icons": [],
   "start_url": "index.html"
 }

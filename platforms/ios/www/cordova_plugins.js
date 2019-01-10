@@ -1,13 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
-<<<<<<< HEAD
-    "id": "pushbots-cordova-plugin.PushbotsPlugin",
-    "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
-    "pluginId": "pushbots-cordova-plugin",
-    "clobbers": [
-      "PushbotsPlugin"
-=======
     "id": "cordova-plugin-battery-status.battery",
     "file": "plugins/cordova-plugin-battery-status/www/battery.js",
     "pluginId": "cordova-plugin-battery-status",
@@ -387,16 +380,12 @@ module.exports = [
     "pluginId": "onesignal-cordova-plugin",
     "clobbers": [
       "OneSignal"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
     ]
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-<<<<<<< HEAD
-  "pushbots-cordova-plugin": "1.6.0"
-=======
   "cordova-plugin-battery-status": "1.2.5",
   "cordova-plugin-compat": "1.2.0",
   "cordova-plugin-camera": "2.4.1",
@@ -410,7 +399,6 @@ module.exports.metadata =
   "cordova-plugin-network-information": "1.3.4",
   "cordova-plugin-vibration": "2.1.6",
   "onesignal-cordova-plugin": "2.4.6"
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
 };
 // BOTTOM OF METADATA
 });

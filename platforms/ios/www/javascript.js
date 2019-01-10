@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-if(PushbotsPlugin.isIOS) {
-	PushbotsPlugin.initializeiOS("5c180f800540a37cd570ccdf");
-}
-if(PushbotsPlugin.isAndroid) {
-	PushbotsPlugin.initializeAndroid("5c180f800540a37cd570ccdf", "633747534823");
-}
-=======
->>>>>>> 1322010c59c440220bfa60f9eef939b3b0fce67c
 var xml;
 function getIP()
 {
@@ -18,10 +9,16 @@ function retrieveParser()
 	if(xml == null || typeof xml == "undefined")
 	{	var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
-	        if (this.readyState == 4 && this.status == 200) {
+	        	if (this.readyState == 4 && this.status == 200) {
 				xml = this.responseXML;
 			}
-	    };
+	        };
+		xhttp.withCredentials = true;
+	        xhttp.open("POST", getIP() + "Menu.xml", false);
+	        xhttp.send();
+	        if (this.readyState == 4 && this.status == 200) {
+			xml = this.responseXML;
+		}
 	    xhttp.open("POST", getIP() + "Menu.xml", false);
 	    xhttp.send();
 		return xml.getElementsByTagName("Item");
