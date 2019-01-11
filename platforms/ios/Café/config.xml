@@ -56,6 +56,10 @@
     <feature name="Vibration">
         <param name="ios-package" value="CDVVibration" />
     </feature>
+    <feature name="Whitelist">
+        <param name="ios-package" value="CDVNavigationWhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <name>Café</name>
     <description>
         Café App for Café @ Maryland Hall.

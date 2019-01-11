@@ -381,6 +381,12 @@ module.exports = [
       "navigator.notification",
       "navigator"
     ]
+  },
+  {
+    "id": "cordova-plugin-whitelist.whitelist",
+    "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+    "pluginId": "cordova-plugin-whitelist",
+    "runs": true
   }
 ];
 module.exports.metadata = 
@@ -398,7 +404,8 @@ module.exports.metadata =
   "cordova-plugin-globalization": "1.0.9",
   "cordova-plugin-inappbrowser": "1.7.2",
   "cordova-plugin-network-information": "1.3.4",
-  "cordova-plugin-vibration": "2.1.6"
+  "cordova-plugin-vibration": "2.1.6",
+  "cordova-plugin-whitelist": "1.1.0"
 };
 // BOTTOM OF METADATA
 });
