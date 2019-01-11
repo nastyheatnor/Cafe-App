@@ -5,5 +5,6 @@
     "AVFoundation.framework": 1,
     "libz.tbd": 1,
     "AudioToolbox.framework": 2,
-    "CoreTelephony.framework": 1
+    "CoreTelephony.framework": 1,
+    "PushKit.framework": 1
 }

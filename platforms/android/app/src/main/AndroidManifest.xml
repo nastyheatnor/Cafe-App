@@ -21,6 +21,19 @@
                 <category android:name="com.cafe.cafeapp" />
             </intent-filter>
         </receiver>
+        <activity android:exported="true" android:name="com.adobe.phonegap.push.PushHandlerActivity" android:permission="${applicationId}.permission.PushHandlerActivity" />
+        <receiver android:name="com.adobe.phonegap.push.BackgroundActionButtonHandler" />
+        <receiver android:name="com.adobe.phonegap.push.PushDismissedHandler" />
+        <service android:name="com.adobe.phonegap.push.FCMService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.adobe.phonegap.push.PushInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
     </application>
     <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="27" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -35,4 +48,5 @@
     <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE" />
     <permission android:name="com.cafe.cafeapp.permission.RECEIVE_ADM_MESSAGE" android:protectionLevel="signature" />
     <uses-permission android:name="com.cafe.cafeapp.permission.RECEIVE_ADM_MESSAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 </manifest>

@@ -60,6 +60,9 @@
         <param name="ios-package" value="CDVNavigationWhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="PushNotification">
+        <param name="ios-package" value="PushPlugin" />
+    </feature>
     <name>Café</name>
     <description>
         Café App for Café @ Maryland Hall.

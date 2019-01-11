@@ -92,6 +92,8 @@ ext {
 
 // PLUGIN GRADLE EXTENSIONS START
 apply from: "../onesignal-cordova-plugin/cafeapp-build-extras-onesignal.gradle"
+apply from: "../cordova-support-google-services/cafeapp-build.gradle"
+apply from: "../phonegap-plugin-multidex/cafeapp-multidex.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
@@ -268,6 +270,9 @@ dependencies {
     implementation(project(path: ":CordovaLib"))
     compile "com.android.support:support-v4:24.1.1+"
     compile "com.onesignal:OneSignal:3.10.5"
+    compile "com.android.support:support-v13:27.+"
+    compile "me.leolin:ShortcutBadger:1.1.17@aar"
+    compile "com.google.firebase:firebase-messaging:11.6.2"
     // SUB-PROJECT DEPENDENCIES END
 }
 
