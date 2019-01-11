@@ -7,7 +7,7 @@
     <author email="lincolndoney@outlook.com" href="https://lincolnstools.ddns.net">
         Lincoln Doney
     </author>
-    <content src="Home.html" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
