@@ -3,16 +3,17 @@ function getIP()
 {
 	return "http://100.16.105.198/cafe/CafeAppServer/";
 }
-
 function retrieveParser()
 {
 	if(xml == null || typeof xml == "undefined")
 	{	var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
-	        if (this.readyState == 4 && this.status == 200) {
+	        	if (this.readyState == 4 && this.status == 200) {
 				xml = this.responseXML;
 			}
-	    };
+	        };
+	        xhttp.open("POST", getIP() + "Menu.xml", false);
+	        xhttp.send();
 	    xhttp.open("POST", getIP() + "Menu.xml", false);
 	    xhttp.send();
 		return xml.getElementsByTagName("Item");

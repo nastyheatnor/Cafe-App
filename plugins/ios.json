@@ -7,11 +7,20 @@
     "files": {}
   },
   "installed_plugins": {
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.cafe.cafeapp"
+    },
     "cordova-plugin-battery-status": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-camera": {
       "CAMERA_USAGE_DESCRIPTION": " ",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+      "PACKAGE_NAME": "com.cafe.cafeapp"
+    },
+    "cordova-plugin-media-capture": {
+      "CAMERA_USAGE_DESCRIPTION": " ",
+      "MICROPHONE_USAGE_DESCRIPTION": " ",
       "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
       "PACKAGE_NAME": "com.cafe.cafeapp"
     },
@@ -31,19 +40,10 @@
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     },
-    "cordova-plugin-media-capture": {
-      "CAMERA_USAGE_DESCRIPTION": " ",
-      "MICROPHONE_USAGE_DESCRIPTION": " ",
-      "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
-      "PACKAGE_NAME": "com.cafe.cafeapp"
-    },
     "cordova-plugin-network-information": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "com.cafe.cafeapp"
-    },
-    "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     }
   },

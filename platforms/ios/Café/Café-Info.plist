@@ -52,17 +52,17 @@
       <key>NSAllowsArbitraryLoads</key>
       <true/>
     </dict>
+    <key>UIBackgroundModes</key>
+    <array>
+      <string>remote-notification</string>
+    </array>
     <key>NSCameraUsageDescription</key>
     <string/>
     <key>NSPhotoLibraryUsageDescription</key>
     <string/>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string/>
+    <string></string>
     <key>NSMicrophoneUsageDescription</key>
     <string/>
-    <key>UIBackgroundModes</key>
-    <array>
-      <string>remote-notification</string>
-    </array>
   </dict>
 </plist>

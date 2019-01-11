@@ -1,4 +1,12 @@
 {
+  "onesignal-cordova-plugin": {
+    "source": {
+      "type": "registry",
+      "id": "onesignal-cordova-plugin"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
   "cordova-plugin-battery-status": {
     "source": {
       "type": "registry",
@@ -13,7 +21,10 @@
       "id": "cordova-plugin-camera@~2.4.1"
     },
     "is_top_level": true,
-    "variables": {}
+    "variables": {
+      "CAMERA_USAGE_DESCRIPTION": " ",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
+    }
   },
   "cordova-plugin-compat": {
     "source": {
@@ -29,7 +40,11 @@
       "id": "cordova-plugin-media-capture@~1.4.3"
     },
     "is_top_level": true,
-    "variables": {}
+    "variables": {
+      "CAMERA_USAGE_DESCRIPTION": " ",
+      "MICROPHONE_USAGE_DESCRIPTION": " ",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
+    }
   },
   "cordova-plugin-file": {
     "source": {
@@ -61,7 +76,9 @@
       "id": "cordova-plugin-geolocation@~2.4.3"
     },
     "is_top_level": true,
-    "variables": {}
+    "variables": {
+      "GEOLOCATION_USAGE_DESCRIPTION": " "
+    }
   },
   "cordova-plugin-globalization": {
     "source": {
@@ -91,14 +108,6 @@
     "source": {
       "type": "registry",
       "id": "cordova-plugin-vibration@~2.1.5"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "onesignal-cordova-plugin": {
-    "source": {
-      "type": "registry",
-      "id": "onesignal-cordova-plugin"
     },
     "is_top_level": true,
     "variables": {}

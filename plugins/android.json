@@ -13,9 +13,6 @@
     "cordova-plugin-camera": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     },
-    "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "com.cafe.cafeapp"
-    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     },
@@ -29,6 +26,9 @@
       "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.cafe.cafeapp"
+    },
+    "cordova-plugin-media-capture": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "cordova-plugin-network-information": {
