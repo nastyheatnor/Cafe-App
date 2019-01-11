@@ -1,4 +1,4 @@
-com.cafeapp.cafe
+com.cafe.cafeapp
 int attr buttonSize 0x7f010000
 int attr circleCrop 0x7f010001
 int attr colorScheme 0x7f010002

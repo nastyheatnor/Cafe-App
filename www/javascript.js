@@ -3,7 +3,10 @@ function getIP()
 {
 	return "http://100.16.105.198/cafe/CafeAppServer/";
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 11061173da2c2b974c03174e73e79fce525c616e
 function retrieveParser()
 {
 	if(xml == null || typeof xml == "undefined")
