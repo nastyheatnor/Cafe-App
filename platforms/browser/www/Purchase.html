@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="styles.css">
+<!-- <script async src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"></script> -->
+<script src="javascript.js"></script>
+<script>
+/*
+	function onGooglePayLoaded() {
+		const googlePayClient = 
+			new google.payments.api.PaymentsClient({
+				environment: "TEST"
+			});
+		const clientConfiguration = {
+			apiVersion: 2,
+			apiVersionMinor: 0,
+			allowedPaymentMethods: [cardPaymentMethod]
+		};
+		googlePayClient.isReadyToPay(clientConfiguration)
+			.then(function(response) {
+				if(response.result) {
+					googlePayClient.createButton({
+					buttonColor:'default',
+					buttonType:'long',
+					onClick: onGooglePaymentsButtonClicked
+					});
+				}
+			}).catch(function(err) {
+			
+			});
+	}
+*/
+
+	function sendToServer()
+	{
+	    var text = document.getElementById("paytext");
+	    var method = text.getElementsByTagName("span")[0].innerHTML;
+if(method != null && method != "")
+{
+	    var json = {};
+	    json.id = "";
+	    json.status = "INCOMPLETE";
+	    if(localStorage.getItem("Stor") == "GN")
+	    {
+		    json.time = new Date().getTime();
+		    json.sched = "GN";
+	    }
+	    else
+	    {
+		    var dt = new Date(document.getElementById("date-later").value);
+		    json.time = dt.getTime();
+		    json.sched = "GL";
+	    }
+	    json.order = getCart();
+	    json.cost = getTotalPrice();
+            json.paym = method;
+
+	    json.mechanism = localStorage.getItem("mechanism");
+		localStorage.setItem("paym", json.paym);
+		localStorage.setItem("cost", getTotalPrice());
+	        var xhttp = new XMLHttpRequest();
+	        xhttp.onreadystatechange = function() {
+	                if(this.readyState == 4 && this.status == 200) {
+				localStorage.setItem("id", this.responseText);
+				location.href = "CompleteOrder.html";
+	                }
+	        };
+	        var params = "json=" + JSON.stringify(json);
+	        xhttp.open("POST", getIP() + "phpside.php", true);
+	        xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	        xhttp.send(params);
+}
+else
+{
+	text.style.color = "red";	
+	alert("You must select a Payment Method!!");
+}
+	}
+	function setPaym(elem)
+	{
+		var elist = document.getElementsByClassName("meth");
+		for(var i = 0; i < elist.length; i++)
+		{
+			elist[i].style.color = "white";
+		}
+		elem.style.color = "green";
+		setPaymTxt(elem.innerHTML);
+
+	}
+	function setPaymTxt(str)
+	{
+		var text = document.getElementById("paytext");
+		text.style.color = "green";
+		text.innerHTML = "Pay using: <span>" + str + "</span>";
+	}
+	function setSched(str)
+	{
+		var subsect = document.getElementById("purchase-subsect");
+		subsect.style.color = "green";
+		var GNBtn = document.getElementById("GNBtn");
+		var GLBtn = document.getElementById("GLBtn");
+		subsect.innerHTML = "";
+		if(str == "GN")
+		{
+			//Get Now
+			var GNel = document.createElement("div");
+			GNel.id = "GetMain";
+			var p = document.createElement("p");
+			p.innerHTML = "Purchase Now!";			
+			GNel.appendChild(p);
+			subsect.appendChild(GNel);
+			GNBtn.style.color = "green";
+			GLBtn.style.color = "white";
+			localStorage.setItem("Stor", "GN");
+		}else if(str == "GL")
+		{
+			//Get Later
+			var GLel = document.createElement("div");
+			GLel.id = "GetMain";			
+			var inpt = document.createElement("input");
+			inpt.type = "datetime-local";
+			inpt.id = "date-later";
+			var date = new Date();
+			var day = date.getDate();
+			var month = date.getMonth() + 1;
+			var year = date.getFullYear();
+			if (month < 10) month = "0" + month;
+			if (day < 10) day = "0" + day;
+			var today = year + "-" + month + "-" + day + "T12:00";      
+			inpt.value = today;
+
+			var label = document.createElement("label");
+			label.for = "GLDate";
+			label.innerHTML = "Buy On: ";
+
+			GLel.appendChild(label);
+			GLel.appendChild(inpt);
+			subsect.appendChild(GLel);
+
+			GLBtn.style.color = "green";
+			GNBtn.style.color = "white";
+
+			localStorage.setItem("Stor", "");
+		}
+	}
+</script>
+<style>
+#paytext {
+    margin-bottom: 0px;
+    font-size: 20px;
+    margin-top:0px;
+    border-left: white 2.5px solid;
+    border-right: white 2.5px solid;
+    color: red;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+}
+#purchase-subsect {
+    display: inline-block;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    color: green;
+    border-left: white 2.5px solid;
+    border-right: white 2.5px solid;
+}
+#GetMain p {
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+.purchase-button {
+    height:50px;
+}
+</style>
+<title>Checkout</title>
+</head>
+<body>
+<div id="wrapper" style="text-align:center">
+	<div id="payment-wrap">
+		<h1>Payment Method</h1>
+		<button id="ppl" class="purchase-button meth" onclick="setPaym(this)">Paypal</button>
+		<button id="sqr" class="purchase-button meth" onclick="setPaym(this)">Square</button>
+		<button id="gp"  class="purchase-button meth" onclick="setPaym(this)">Google/Apple Pay</button>
+
+		<br><br><br><br>
+
+		<div>
+			<h1>Purchase Schedule</h1>
+			<button class="purchase-button sch" id="GNBtn" onclick="setSched('GN')">Get it now!</button>
+			<button class="purchase-button sch" id="GLBtn" onclick="setSched('GL')">Get it later!</button>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div id="purchase-subsect" style="color:red">
+				<div id="GetMain">
+					No Order Time Selected
+				</div>
+			</div>
+		</div>
+		<p id="paytext">No payment method<span> selected</span></p>
+		<button class="purchase-button" onclick="sendToServer()">Confirm</button>
+		<button class="purchase-button" onclick="location.href='Checkout.html'">Go Back</button>
+	</div>
+</div>
+</body>
+</html>

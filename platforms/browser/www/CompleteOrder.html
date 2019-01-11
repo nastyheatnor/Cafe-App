@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="styles.css">
+<script src="javascript.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+function getID()
+{
+	var idlist = document.getElementById("id-listing");
+	var id = localStorage.getItem("id");
+	var paym = localStorage.getItem("paym");
+	var cost = localStorage.getItem("cost");
+	cost = parseInt(cost).toFixed(2);
+	idlist.innerHTML = "Your ID: " + id;
+	if(paym == "Cash")
+	{
+		document.getElementById("pay-details").innerHTML = "Pay at Counter: $" + cost;
+	}else if(paym == "Credit/Debit")
+	{
+		document.getElementById("pay-details").innerHTML = "Paid with Card: $" + cost;
+	}else if(paym == "Paypal")
+	{
+		document.getElementById("pay-details").innerHTML = "Paid with Paypal: $" + cost;
+	}
+}
+</script>
+<style>
+h1 {
+	background: rgb(0,0,0,0);
+}
+#payment-wrap
+{
+        display: inline-block; 
+        width: 100%;
+        height: 100%;
+        vertical-align: middle; 
+        line-height: 200px;
+        text-align: center; 
+	background: rgb(0,0,0,0.7);
+}
+</style>
+<title>Complete Order</title>
+</head>
+<body onload="getID();">
+<div id="wrapper" style="text-align:center">
+	<div id="payment-wrap">
+		<h1>Order complete!</h1>
+		<h1 id="id-listing"></h1>
+		<h1 id="pay-details"></h1>
+		<h1 style="font-size:15px">You will be notified when your order is ready</h1>
+	</div>
+</div>
+</body>
+</html>
