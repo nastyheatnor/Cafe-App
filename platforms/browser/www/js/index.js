@@ -39,10 +39,10 @@ var app = {
 			alert("Notification recieved!");
 		};
 
-  window.plugins.OneSignal
-    .startInit("1f0a2765-9bef-403e-a21f-21aa5fe3003e")
-    .handleNotificationOpened(notificationOpenedCallback)
-    .endInit();
+		window.plugins.OneSignal
+			.startInit("1f0a2765-9bef-403e-a21f-21aa5fe3003e")
+			.handleNotificationOpened(notificationOpenedCallback)
+			.endInit();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

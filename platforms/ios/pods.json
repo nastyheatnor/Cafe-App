@@ -4,11 +4,5 @@
         "type": "podspec",
         "spec": "2.9.4",
         "count": 1
-    },
-    "FirebaseMessaging": {
-        "name": "FirebaseMessaging",
-        "type": "podspec",
-        "spec": "~> 2.0.0",
-        "count": 1
     }
 }

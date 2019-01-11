@@ -3,5 +3,4 @@ platform :ios, '8.0'
 target 'E:\Coding\Cafe-App\platforms\ios\Café' do
 	project 'E:\Coding\Cafe-App\platforms\ios\Café.xcodeproj'
 	pod 'OneSignal', '2.9.4'
-	pod 'FirebaseMessaging', '~> 2.0.0'
 end

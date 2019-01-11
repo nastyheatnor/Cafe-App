@@ -42,21 +42,10 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
-    },
-    "phonegap-plugin-push": {
-      "ANDROID_SUPPORT_V13_VERSION": "27.+",
-      "FCM_VERSION": "11.6.2",
-      "PACKAGE_NAME": "com.cafe.cafeapp"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.cafe.cafeapp"
-    },
-    "cordova-support-google-services": {
-      "PACKAGE_NAME": "com.cafe.cafeapp"
-    },
-    "phonegap-plugin-multidex": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     }
   }

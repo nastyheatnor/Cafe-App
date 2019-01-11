@@ -48,9 +48,6 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
-    },
-    "phonegap-plugin-push": {
-      "PACKAGE_NAME": "com.cafe.cafeapp"
     }
   },
   "dependent_plugins": {

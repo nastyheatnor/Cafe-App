@@ -412,22 +412,6 @@ module.exports = [
         "clobbers": [
             "OneSignal"
         ]
-    },
-    {
-        "file": "plugins/phonegap-plugin-push/www/push.js",
-        "id": "phonegap-plugin-push.PushNotification",
-        "pluginId": "phonegap-plugin-push",
-        "clobbers": [
-            "PushNotification"
-        ]
-    },
-    {
-        "file": "plugins/phonegap-plugin-push/www/browser/push.js",
-        "id": "phonegap-plugin-push.BrowserPush",
-        "pluginId": "phonegap-plugin-push",
-        "clobbers": [
-            "PushNotification"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -446,8 +430,7 @@ module.exports.metadata =
     "cordova-plugin-network-information": "1.3.4",
     "cordova-plugin-vibration": "2.1.6",
     "onesignal-cordova-plugin": "2.4.6",
-    "cordova-plugin-whitelist": "1.1.0",
-    "phonegap-plugin-push": "2.2.3"
+    "cordova-plugin-whitelist": "1.1.0"
 }
 // BOTTOM OF METADATA
 });
