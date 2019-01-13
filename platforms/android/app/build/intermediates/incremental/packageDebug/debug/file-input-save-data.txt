@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Jan 12 20:25:35 EST 2019
+#Sat Jan 12 20:44:52 EST 2019
 2.path=www/res/screen/ios/Default-Landscape@2x~ipad.png
 14.set=ASSET
 107.baseType=DIRECTORY
