@@ -37,10 +37,10 @@
     "cordova-plugin-vibration": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     },
-    "onesignal-cordova-plugin": {
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     },
-    "cordova-plugin-whitelist": {
+    "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     }
   },

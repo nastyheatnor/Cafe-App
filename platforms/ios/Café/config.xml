@@ -19,9 +19,6 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="OneSignalPush">
-        <param name="ios-package" value="OneSignalPush" />
-    </feature>
     <feature name="Battery">
         <param name="ios-package" value="CDVBattery" />
     </feature>
@@ -59,6 +56,9 @@
     <feature name="Whitelist">
         <param name="ios-package" value="CDVNavigationWhitelistPlugin" />
         <param name="onload" value="true" />
+    </feature>
+    <feature name="OneSignalPush">
+        <param name="ios-package" value="OneSignalPush" />
     </feature>
     <name>Café</name>
     <description>

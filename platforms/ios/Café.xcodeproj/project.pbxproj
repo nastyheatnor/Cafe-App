@@ -16,7 +16,6 @@
 		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		E961D8A2D4124875966E338E /* OneSignalPush.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CCED7E9BD44488A248A132 /* OneSignalPush.m */; };
 		CD641E930AF24ADF819158DC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE9CF4504114F47B9C6BE27 /* SystemConfiguration.framework */; };
 		593E722A01114FD78F6B0167 /* CDVBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE6EA6F2823481A8A809184 /* CDVBattery.m */; };
 		C8222FE20F84442F8D696B70 /* UIImage+CropScaleOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E40097D9EC43989F32FA27 /* UIImage+CropScaleOrientation.m */; };
@@ -43,6 +42,7 @@
 		A14998FB369343BE91ACF6E0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39F9E7A80064457AA12DB80 /* CoreTelephony.framework */; };
 		4C24B424C34544C6B28185E7 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1A0A989E342219D07EB52 /* CDVVibration.m */; };
 		ADFE6290CB8D4BB4950671AA /* CDVNavigationWhitelistPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C139D156954442C299722D7A /* CDVNavigationWhitelistPlugin.m */; };
+		3D2417B5C156460C8595C71E /* OneSignalPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 860A3D6E7D2442F3A27E1ED9 /* OneSignalPush.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,8 +83,6 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Café/config.xml"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		F3CCED7E9BD44488A248A132 /* OneSignalPush.m */ = {isa = PBXFileReference; name = "OneSignalPush.m"; path = "onesignal-cordova-plugin/OneSignalPush.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		8F004BBAEB37493C843731D3 /* OneSignalPush.h */ = {isa = PBXFileReference; name = "OneSignalPush.h"; path = "onesignal-cordova-plugin/OneSignalPush.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		7FE9CF4504114F47B9C6BE27 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		2AE6EA6F2823481A8A809184 /* CDVBattery.m */ = {isa = PBXFileReference; name = "CDVBattery.m"; path = "cordova-plugin-battery-status/CDVBattery.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		BB7AC24375BD47B9B3CAB692 /* CDVBattery.h */ = {isa = PBXFileReference; name = "CDVBattery.h"; path = "cordova-plugin-battery-status/CDVBattery.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
@@ -129,6 +127,8 @@
 		F89215AD37874D4085F595FF /* CDVVibration.h */ = {isa = PBXFileReference; name = "CDVVibration.h"; path = "cordova-plugin-vibration/CDVVibration.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		C139D156954442C299722D7A /* CDVNavigationWhitelistPlugin.m */ = {isa = PBXFileReference; name = "CDVNavigationWhitelistPlugin.m"; path = "cordova-plugin-whitelist/CDVNavigationWhitelistPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		F53338DAD67C4F109F5B3C0A /* CDVNavigationWhitelistPlugin.h */ = {isa = PBXFileReference; name = "CDVNavigationWhitelistPlugin.h"; path = "cordova-plugin-whitelist/CDVNavigationWhitelistPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		860A3D6E7D2442F3A27E1ED9 /* OneSignalPush.m */ = {isa = PBXFileReference; name = "OneSignalPush.m"; path = "onesignal-cordova-plugin/OneSignalPush.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4B0D1D7C61A8406ABBFD8452 /* OneSignalPush.h */ = {isa = PBXFileReference; name = "OneSignalPush.h"; path = "onesignal-cordova-plugin/OneSignalPush.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,8 +248,6 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				F3CCED7E9BD44488A248A132 /* OneSignalPush.m */,
-				8F004BBAEB37493C843731D3 /* OneSignalPush.h */,
 				2AE6EA6F2823481A8A809184 /* CDVBattery.m */,
 				BB7AC24375BD47B9B3CAB692 /* CDVBattery.h */,
 				C2E40097D9EC43989F32FA27 /* UIImage+CropScaleOrientation.m */,
@@ -285,6 +283,8 @@
 				F89215AD37874D4085F595FF /* CDVVibration.h */,
 				C139D156954442C299722D7A /* CDVNavigationWhitelistPlugin.m */,
 				F53338DAD67C4F109F5B3C0A /* CDVNavigationWhitelistPlugin.h */,
+				860A3D6E7D2442F3A27E1ED9 /* OneSignalPush.m */,
+				4B0D1D7C61A8406ABBFD8452 /* OneSignalPush.h */,
 			);
 			name = Plugins;
 			path = "Café/Plugins";
@@ -399,7 +399,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				E961D8A2D4124875966E338E /* OneSignalPush.m in Sources */,
 				593E722A01114FD78F6B0167 /* CDVBattery.m in Sources */,
 				C8222FE20F84442F8D696B70 /* UIImage+CropScaleOrientation.m in Sources */,
 				BDF9DA9C29584A1FBC880D0F /* CDVCamera.m in Sources */,
@@ -417,6 +416,7 @@
 				9EEF4BDC07514D039A179771 /* CDVReachability.m in Sources */,
 				4C24B424C34544C6B28185E7 /* CDVVibration.m in Sources */,
 				ADFE6290CB8D4BB4950671AA /* CDVNavigationWhitelistPlugin.m in Sources */,
+				3D2417B5C156460C8595C71E /* OneSignalPush.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

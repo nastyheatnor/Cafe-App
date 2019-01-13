@@ -371,25 +371,17 @@ module.exports = [
     ]
   },
   {
-    "id": "onesignal-cordova-plugin.OneSignal",
-    "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
-    "pluginId": "onesignal-cordova-plugin",
-    "clobbers": [
-      "OneSignal"
-    ]
-  },
-  {
     "id": "cordova-plugin-whitelist.whitelist",
     "file": "plugins/cordova-plugin-whitelist/whitelist.js",
     "pluginId": "cordova-plugin-whitelist",
     "runs": true
   },
   {
-    "id": "phonegap-plugin-push.PushNotification",
-    "file": "plugins/phonegap-plugin-push/www/push.js",
-    "pluginId": "phonegap-plugin-push",
+    "id": "onesignal-cordova-plugin.OneSignal",
+    "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+    "pluginId": "onesignal-cordova-plugin",
     "clobbers": [
-      "PushNotification"
+      "OneSignal"
     ]
   }
 ];
@@ -407,11 +399,8 @@ module.exports.metadata =
   "cordova-plugin-media-capture": "1.4.3",
   "cordova-plugin-network-information": "1.3.4",
   "cordova-plugin-vibration": "2.1.6",
-  "onesignal-cordova-plugin": "2.4.6",
   "cordova-plugin-whitelist": "1.1.0",
-  "cordova-support-google-services": "1.1.0",
-  "phonegap-plugin-multidex": "1.0.0",
-  "phonegap-plugin-push": "2.2.3"
+  "onesignal-cordova-plugin": "2.4.6"
 };
 // BOTTOM OF METADATA
 });

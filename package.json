@@ -18,8 +18,8 @@
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-network-information": {},
       "cordova-plugin-vibration": {},
-      "onesignal-cordova-plugin": {},
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "onesignal-cordova-plugin": {}
     }
   },
   "dependencies": {
@@ -37,6 +37,6 @@
     "cordova-plugin-vibration": "~2.1.5",
     "cordova-plugin-whitelist": "1.1.0",
     "cordova-support-google-services": "1.1.0",
-    "onesignal-cordova-plugin": "~2.4.6"
+    "onesignal-cordova-plugin": "2.4.6"
   }
 }
