@@ -26,27 +26,24 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        // Add to index.js or the first page that loads with your app.
-		// For Intel XDK and please add this to your app.js.
-
-		document.addEventListener('deviceready', function () {
-		// Enable to debug issues.
-		// window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-  
-		var notificationOpenedCallback = function(jsonData) {
-			console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-		};
-
-		window.plugins.OneSignal
-			.startInit("48c8462f-c94e-4498-aee7-3c33da6e1706")
-			.handleNotificationOpened(notificationOpenedCallback)
-			.endInit();
-		}, false);
+        document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
+    onDeviceReady: function() {
+        app.receivedEvent('deviceready');
+		  var notificationOpenedCallback = function(jsonData) {
+			console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+			alert("Notification recieved!");
+		};
+
+		window.plugins.OneSignal
+		.startInit("1f0a2765-9bef-403e-a21f-21aa5fe3003e")
+		.handleNotificationOpened(notificationOpenedCallback)
+		.endInit();
+    },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);

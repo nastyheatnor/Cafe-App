@@ -456,6 +456,7 @@
 					"$(inherited)",
 					"\"Café/Plugins/pushbots-cordova-plugin\"",
 					"\"Café/Plugins/pushbots-cordova-plugin\"",
+					"\"Café/Plugins/pushbots-cordova-plugin\"",
 				);
 			};
 			name = Debug;
@@ -481,6 +482,7 @@
 				PRODUCT_NAME = "Café";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"Café/Plugins/pushbots-cordova-plugin\"",
 					"\"Café/Plugins/pushbots-cordova-plugin\"",
 					"\"Café/Plugins/pushbots-cordova-plugin\"",
 				);
