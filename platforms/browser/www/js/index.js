@@ -40,7 +40,7 @@ var app = {
 		};
 
 		window.plugins.OneSignal
-		.startInit("48c8462f-c94e-4498-aee7-3c33da6e1706")
+		.startInit("1f0a2765-9bef-403e-a21f-21aa5fe3003e")
 		.handleNotificationOpened(notificationOpenedCallback)
 		.endInit();
     },
