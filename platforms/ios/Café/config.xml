@@ -60,9 +60,6 @@
     <feature name="OneSignalPush">
         <param name="ios-package" value="OneSignalPush" />
     </feature>
-    <feature name="PushbotsPlugin">
-        <param name="ios-package" value="PushbotsPlugin" />
-    </feature>
     <name>Café</name>
     <description>
         Café App for Café @ Maryland Hall.

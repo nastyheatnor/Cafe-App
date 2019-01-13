@@ -65,12 +65,7 @@
               "count": 1
             }
           ],
-          "/widget": [
-            {
-              "xml": "<feature name=\"PushbotsPlugin\"><param name=\"android-package\" value=\"com.pushbots.plugin.PushbotsPlugin\" /></feature>",
-              "count": 1
-            }
-          ]
+          "/widget": []
         }
       },
       "AndroidManifest.xml": {
@@ -118,7 +113,7 @@
           "/manifest": [
             {
               "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
-              "count": 2
+              "count": 1
             },
             {
               "xml": "<uses-permission android:name=\"com.amazon.device.messaging.permission.RECEIVE\" />",
@@ -144,10 +139,6 @@
             },
             {
               "xml": "<receiver android:name=\"com.onesignal.ADMMessageHandler$Receiver\" android:permission=\"com.amazon.device.messaging.permission.SEND\"><intent-filter><action android:name=\"com.amazon.device.messaging.intent.REGISTRATION\" /><action android:name=\"com.amazon.device.messaging.intent.RECEIVE\" /><category android:name=\"com.cafe.cafeapp\" /></intent-filter></receiver>",
-              "count": 1
-            },
-            {
-              "xml": "<receiver android:name=\"com.pushbots.plugin.PushHandler\" />",
               "count": 1
             }
           ]
@@ -193,9 +184,6 @@
       "PACKAGE_NAME": "com.cafe.cafeapp"
     },
     "onesignal-cordova-plugin": {
-      "PACKAGE_NAME": "com.cafe.cafeapp"
-    },
-    "pushbots-cordova-plugin": {
       "PACKAGE_NAME": "com.cafe.cafeapp"
     }
   },
@@ -584,14 +572,6 @@
       "clobbers": [
         "OneSignal"
       ]
-    },
-    {
-      "id": "pushbots-cordova-plugin.PushbotsPlugin",
-      "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
-      "pluginId": "pushbots-cordova-plugin",
-      "clobbers": [
-        "PushbotsPlugin"
-      ]
     }
   ],
   "plugin_metadata": {
@@ -607,7 +587,6 @@
     "cordova-plugin-network-information": "1.3.4",
     "cordova-plugin-vibration": "2.1.6",
     "cordova-plugin-whitelist": "1.1.0",
-    "onesignal-cordova-plugin": "2.4.6",
-    "pushbots-cordova-plugin": "1.6.3"
+    "onesignal-cordova-plugin": "2.4.6"
   }
 }

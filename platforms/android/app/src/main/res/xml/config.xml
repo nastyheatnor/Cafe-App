@@ -42,9 +42,6 @@
     <feature name="OneSignalPush">
         <param name="android-package" value="com.plugin.gcm.OneSignalPush" />
     </feature>
-    <feature name="PushbotsPlugin">
-        <param name="android-package" value="com.pushbots.plugin.PushbotsPlugin" />
-    </feature>
     <name>Café</name>
     <description>
         Café App for Café @ Maryland Hall.

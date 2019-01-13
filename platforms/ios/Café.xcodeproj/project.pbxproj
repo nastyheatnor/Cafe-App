@@ -43,8 +43,6 @@
 		4C24B424C34544C6B28185E7 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1A0A989E342219D07EB52 /* CDVVibration.m */; };
 		ADFE6290CB8D4BB4950671AA /* CDVNavigationWhitelistPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C139D156954442C299722D7A /* CDVNavigationWhitelistPlugin.m */; };
 		3D2417B5C156460C8595C71E /* OneSignalPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 860A3D6E7D2442F3A27E1ED9 /* OneSignalPush.m */; };
-		CD39DEC0F8CF4A859FBE90FD /* PushbotsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 534759457D1A47FD86FE64CC /* PushbotsPlugin.m */; };
-		7088B688F43D40AAA763ABF9 /* Pushbots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3E6272AC1C4E7B8D51C51C /* Pushbots.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,9 +129,6 @@
 		F53338DAD67C4F109F5B3C0A /* CDVNavigationWhitelistPlugin.h */ = {isa = PBXFileReference; name = "CDVNavigationWhitelistPlugin.h"; path = "cordova-plugin-whitelist/CDVNavigationWhitelistPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		860A3D6E7D2442F3A27E1ED9 /* OneSignalPush.m */ = {isa = PBXFileReference; name = "OneSignalPush.m"; path = "onesignal-cordova-plugin/OneSignalPush.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		4B0D1D7C61A8406ABBFD8452 /* OneSignalPush.h */ = {isa = PBXFileReference; name = "OneSignalPush.h"; path = "onesignal-cordova-plugin/OneSignalPush.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		534759457D1A47FD86FE64CC /* PushbotsPlugin.m */ = {isa = PBXFileReference; name = "PushbotsPlugin.m"; path = "pushbots-cordova-plugin/PushbotsPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		1C668E98401C4FB0B60A7790 /* PushbotsPlugin.h */ = {isa = PBXFileReference; name = "PushbotsPlugin.h"; path = "pushbots-cordova-plugin/PushbotsPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		1B3E6272AC1C4E7B8D51C51C /* Pushbots.framework */ = {isa = PBXFileReference; name = "Pushbots.framework"; path = "Café/Plugins/pushbots-cordova-plugin/Pushbots.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +144,6 @@
 				CA801B1317CF4FC7896DE967 /* libz.tbd in Frameworks */,
 				3CC69E83283D4BDE8AA982F0 /* AudioToolbox.framework in Frameworks */,
 				A14998FB369343BE91ACF6E0 /* CoreTelephony.framework in Frameworks */,
-				7088B688F43D40AAA763ABF9 /* Pushbots.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +223,6 @@
 				90028A60254E425AA8962565 /* libz.tbd */,
 				7399167D77714E34A68E2792 /* AudioToolbox.framework */,
 				A39F9E7A80064457AA12DB80 /* CoreTelephony.framework */,
-				1B3E6272AC1C4E7B8D51C51C /* Pushbots.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -292,8 +285,6 @@
 				F53338DAD67C4F109F5B3C0A /* CDVNavigationWhitelistPlugin.h */,
 				860A3D6E7D2442F3A27E1ED9 /* OneSignalPush.m */,
 				4B0D1D7C61A8406ABBFD8452 /* OneSignalPush.h */,
-				534759457D1A47FD86FE64CC /* PushbotsPlugin.m */,
-				1C668E98401C4FB0B60A7790 /* PushbotsPlugin.h */,
 			);
 			name = Plugins;
 			path = "Café/Plugins";
@@ -426,7 +417,6 @@
 				4C24B424C34544C6B28185E7 /* CDVVibration.m in Sources */,
 				ADFE6290CB8D4BB4950671AA /* CDVNavigationWhitelistPlugin.m in Sources */,
 				3D2417B5C156460C8595C71E /* OneSignalPush.m in Sources */,
-				CD39DEC0F8CF4A859FBE90FD /* PushbotsPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -387,14 +387,6 @@ module.exports = [
     "clobbers": [
       "OneSignal"
     ]
-  },
-  {
-    "id": "pushbots-cordova-plugin.PushbotsPlugin",
-    "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
-    "pluginId": "pushbots-cordova-plugin",
-    "clobbers": [
-      "PushbotsPlugin"
-    ]
   }
 ];
 module.exports.metadata = 
@@ -413,8 +405,7 @@ module.exports.metadata =
   "cordova-plugin-network-information": "1.3.4",
   "cordova-plugin-vibration": "2.1.6",
   "cordova-plugin-whitelist": "1.1.0",
-  "onesignal-cordova-plugin": "2.4.6",
-  "pushbots-cordova-plugin": "1.6.3"
+  "onesignal-cordova-plugin": "2.4.6"
 };
 // BOTTOM OF METADATA
 });
