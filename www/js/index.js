@@ -32,14 +32,13 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     document.addEventListener('deviceready', function () {
-	// Enable to debug issues.
-	// window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-	alert("READY!");
-	var notificationOpenedCallback = function(jsonData) {
-		console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-	};
+	        app.receivedEvent('deviceready');
+		  var notificationOpenedCallback = function(jsonData) {
+			console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+			alert("Notification recieved!");
+		};
 
-	window.plugins.OneSignal
+		window.plugins.OneSignal
 		.startInit("1f0a2765-9bef-403e-a21f-21aa5fe3003e")
 		.handleNotificationOpened(notificationOpenedCallback)
 		.endInit();
