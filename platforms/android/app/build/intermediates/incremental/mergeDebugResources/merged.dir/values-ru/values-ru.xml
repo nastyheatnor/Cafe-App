@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="com_pushbots_android_close">Закрыть</string>
+    <string name="com_pushbots_android_done">Готово</string>
+    <string name="com_pushbots_android_exit">Завершить</string>
+    <string name="com_pushbots_android_logo">By PushBots</string>
+    <string name="com_pushbots_android_notification_image">Image not displayed</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Включить"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Для работы приложения \"<ns1:g id="APP_NAME">%1$s</ns1:g>\" требуется включить сервисы Google Play."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Включите сервисы Google Play"</string>
@@ -19,5 +24,6 @@
     <string msgid="3441753203274453993" name="common_signin_button_text">"Войти"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Войти через аккаунт Google"</string>
     <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Другое"</string>
+    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Другое"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
 </resources>

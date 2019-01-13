@@ -4,23 +4,6 @@
             "outputFile": "E:\\Coding\\Cafe-App\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hy\\values-hy.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lincoln\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\186ae7a77725e022064f1c2f32ef6617\\res\\values-hy\\values-hy.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "21",
-                        "startColumns": "4",
-                        "startOffsets": "3015",
-                        "endColumns": "100",
-                        "endOffsets": "3111"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Lincoln\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\73bec053f3076fe5c4616ce713462b34\\res\\values-hy\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -35,6 +18,40 @@
                         "startOffsets": "105,213,410,546,656,869,1007,1164,1516,1742,1852,2051,2189,2410,2606,2701,2798",
                         "endColumns": "107,196,135,109,212,137,156,141,225,109,198,137,220,195,94,96,110",
                         "endOffsets": "208,405,541,651,864,1002,1159,1301,1737,1847,2046,2184,2405,2601,2696,2793,2904"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Lincoln\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-gcm-12.0.1.aar\\6f42963bc0d0d27c9f4ea3611158dcf9\\res\\values-hy\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "192",
+                        "endColumns": "98",
+                        "endOffsets": "290"
+                    },
+                    "to": {
+                        "startLines": "21",
+                        "startColumns": "4",
+                        "startOffsets": "3015",
+                        "endColumns": "102",
+                        "endOffsets": "3113"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Lincoln\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\301e0619ecc41e37d8121ac70027f24a\\res\\values-hy\\values-hy.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "22",
+                        "startColumns": "4",
+                        "startOffsets": "3118",
+                        "endColumns": "100",
+                        "endOffsets": "3214"
                     }
                 },
                 {

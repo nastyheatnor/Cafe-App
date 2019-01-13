@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Lincoln\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\186ae7a77725e022064f1c2f32ef6617\\res\\values-da\\values-da.xml",
+                    "source": "C:\\Users\\Lincoln\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\301e0619ecc41e37d8121ac70027f24a\\res\\values-da\\values-da.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,11 +30,28 @@
                         "endOffsets": "151"
                     },
                     "to": {
+                        "startLines": "22",
+                        "startColumns": "4",
+                        "startOffsets": "3005",
+                        "endColumns": "100",
+                        "endOffsets": "3101"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Lincoln\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-gcm-12.0.1.aar\\6f42963bc0d0d27c9f4ea3611158dcf9\\res\\values-da\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "192",
+                        "endColumns": "98",
+                        "endOffsets": "290"
+                    },
+                    "to": {
                         "startLines": "21",
                         "startColumns": "4",
                         "startOffsets": "2902",
-                        "endColumns": "100",
-                        "endOffsets": "2998"
+                        "endColumns": "102",
+                        "endOffsets": "3000"
                     }
                 },
                 {

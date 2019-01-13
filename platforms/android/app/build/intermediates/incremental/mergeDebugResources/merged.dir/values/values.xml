@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <attr format="reference" name="coordinatorLayoutStyle"/>
-    <color name="browser_actions_bg_grey">#F5F5F5</color>
-    <color name="browser_actions_divider_color">#1E000000</color>
-    <color name="browser_actions_text_color">#DE000000</color>
-    <color name="browser_actions_title_color">#646464</color>
+    <color name="com_pushbots_android_selected">#66ffffff</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
@@ -20,69 +16,6 @@
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
-    <declare-styleable name="CoordinatorLayout"><attr format="reference" name="keylines"/><attr format="color|reference" name="statusBarBackground"/></declare-styleable>
-    <declare-styleable name="CoordinatorLayout_Layout"><attr name="android:layout_gravity"/><attr format="string" name="layout_behavior"/><attr format="reference" name="layout_anchor"/><attr format="integer" name="layout_keyline"/><attr name="layout_anchorGravity">
-            
-            <flag name="top" value="0x30"/>
-            
-            <flag name="bottom" value="0x50"/>
-            
-            <flag name="left" value="0x03"/>
-            
-            <flag name="right" value="0x05"/>
-            
-            <flag name="center_vertical" value="0x10"/>
-            
-            <flag name="fill_vertical" value="0x70"/>
-            
-            <flag name="center_horizontal" value="0x01"/>
-            
-            <flag name="fill_horizontal" value="0x07"/>
-            
-            <flag name="center" value="0x11"/>
-            
-            <flag name="fill" value="0x77"/>
-            
-            <flag name="clip_vertical" value="0x80"/>
-            
-            <flag name="clip_horizontal" value="0x08"/>
-            
-            <flag name="start" value="0x00800003"/>
-            
-            <flag name="end" value="0x00800005"/>
-        </attr><attr format="enum" name="layout_insetEdge">
-            
-            <enum name="none" value="0x0"/>
-            
-            <enum name="top" value="0x30"/>
-            
-            <enum name="bottom" value="0x50"/>
-            
-            <enum name="left" value="0x03"/>
-            
-            <enum name="right" value="0x05"/>
-            
-            <enum name="start" value="0x00800003"/>
-            
-            <enum name="end" value="0x00800005"/>
-        </attr><attr name="layout_dodgeInsetEdges">
-            
-            <flag name="none" value="0x0"/>
-            
-            <flag name="top" value="0x30"/>
-            
-            <flag name="bottom" value="0x50"/>
-            
-            <flag name="left" value="0x03"/>
-            
-            <flag name="right" value="0x05"/>
-            
-            <flag name="start" value="0x00800003"/>
-            
-            <flag name="end" value="0x00800005"/>
-            
-            <flag name="all" value="0x77"/>
-        </attr></declare-styleable>
     <declare-styleable name="FontFamily"><attr format="string" name="fontProviderAuthority"/><attr format="string" name="fontProviderPackage"/><attr format="string" name="fontProviderQuery"/><attr format="reference" name="fontProviderCerts"/><attr name="fontProviderFetchStrategy">
             
             <enum name="blocking" value="0"/>
@@ -95,7 +28,7 @@
     <declare-styleable name="FontFamilyFont"><attr name="fontStyle">
             <enum name="normal" value="0"/>
             <enum name="italic" value="1"/>
-        </attr><attr format="reference" name="font"/><attr format="integer" name="fontWeight"/><attr name="android:fontStyle"/><attr name="android:font"/><attr name="android:fontWeight"/></declare-styleable>
+        </attr><attr format="reference" name="font"/><attr format="integer" name="fontWeight"/></declare-styleable>
     <declare-styleable name="LoadingImageView"><attr name="imageAspectRatioAdjust">
 <enum name="none" value="0"/>
 
@@ -119,8 +52,6 @@
 <enum name="auto" value="2"/>
 
 </attr><attr format="reference|string" name="scopeUris"/></declare-styleable>
-    <dimen name="browser_actions_context_menu_max_width">500dp</dimen>
-    <dimen name="browser_actions_context_menu_min_padding">20dp</dimen>
     <dimen name="compat_button_inset_horizontal_material">4dp</dimen>
     <dimen name="compat_button_inset_vertical_material">6dp</dimen>
     <dimen name="compat_button_padding_horizontal_material">8dp</dimen>
@@ -145,7 +76,6 @@
     <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
     <item name="line1" type="id"/>
     <item name="line3" type="id"/>
-    <item name="tag_transition_group" type="id"/>
     <item name="text" type="id"/>
     <item name="text2" type="id"/>
     <item name="title" type="id"/>
@@ -154,6 +84,11 @@
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="activity_name">@string/launcher_name</string>
     <string name="app_name">Café</string>
+    <string name="com_pushbots_android_close">Close</string>
+    <string name="com_pushbots_android_done">Done</string>
+    <string name="com_pushbots_android_exit">Exit</string>
+    <string name="com_pushbots_android_logo">By PushBots</string>
+    <string name="com_pushbots_android_notification_image">Image not displayed</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -173,6 +108,7 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="gcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="launcher_name">@string/app_name</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent"/>
@@ -193,7 +129,16 @@
     <style name="TextAppearance.Compat.Notification.Title.Media"/>
     <style name="Widget.Compat.NotificationActionContainer" parent=""/>
     <style name="Widget.Compat.NotificationActionText" parent=""/>
-    <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
-        <item name="statusBarBackground">#000000</item>
-    </style>
+    <style name="com_pushbots_android_InAppActivityAnimation">
+    <item name="android:windowEnterAnimation">@anim/com_pushbots_android_fade_in</item>
+    <item name="android:windowExitAnimation">@anim/com_pushbots_android_fade_out</item>
+  </style>
+    <style name="com_pushbots_android_InAppActivityTheme" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+    <item name="android:windowAnimationStyle">@style/com_pushbots_android_InAppActivityAnimation</item>
+  </style>
 </resources>
