@@ -38,7 +38,7 @@ var app = {
 		};
 
 		window.plugins.OneSignal
-			.startInit("YOUR_APPID")
+			.startInit("48c8462f-c94e-4498-aee7-3c33da6e1706")
 			.handleNotificationOpened(notificationOpenedCallback)
 			.endInit();
 		}, false);
