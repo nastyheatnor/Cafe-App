@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="com_pushbots_android_close">Cerrar</string>
-    <string name="com_pushbots_android_done">Hecho</string>
-    <string name="com_pushbots_android_exit">Salir</string>
-    <string name="com_pushbots_android_logo">By PushBots</string>
-    <string name="com_pushbots_android_notification_image">Imagen no mostrada</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Habilitar"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará hasta que no habilites Servicios de Google Play."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Habilita Servicios de Google Play"</string>
@@ -24,6 +19,5 @@
     <string msgid="3441753203274453993" name="common_signin_button_text">"Iniciar sesión"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Iniciar sesión con Google"</string>
     <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Varias"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Varias"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
 </resources>
