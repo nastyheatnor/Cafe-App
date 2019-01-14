@@ -211,6 +211,7 @@ h1 {
 	color:white;
 	background-repeat:no-repeat; 
 	background-size:cover;
+	border: 0px;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 	position:relative;

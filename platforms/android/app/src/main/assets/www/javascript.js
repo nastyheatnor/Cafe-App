@@ -40,14 +40,15 @@ function parseFromMenu(xml, mechanism)
 			var id = readAttribute(menarr[i],"id");
 			var itm = document.createElement("button");
 			itm.className = "order";
+			itm.id = readAttribute(menarr[i],"id");
 			var itmnm = readAttribute(menarr[i], "name");
-			var optionsxml = menarr[i].getElementsByTagName("options")[0];
-
+			
 			itm.onclick = function() {
-			   var elem = this.getElementsByTagName("p")[0].innerHTML;
+			   var elem = parseInt(document.getElementById(this.id).getElementsByTagName("p")[0].innerHTML);
 			   var modal = document.getElementById("myModal").style.display = "block";
-			   document.getElementById("current-id-listing").innerHTML = elem;
-			   document.getElementById("item-name").innerHTML = itmnm;
+			   var optionsxml = parseDirectOption(this.id, "options");
+			   document.getElementById("current-id-listing").innerHTML = this.id;
+			   document.getElementById("item-name").innerHTML = parseDirect(this.id, "name");
 			   var optionstable = document.getElementById("options-table");
 			   optionstable.innerHTML = "";
 			   var optionsxmlarr = optionsxml.getElementsByTagName("option");
@@ -120,11 +121,25 @@ function parseFromMenu(xml, mechanism)
 	var basetable = document.getElementById("base-table");
 	basetable.style.visibility = "visible";
 }
+
 function readAttribute(elem, attr)
 {
 	return elem.getElementsByTagName(attr)[0].getAttribute("value");
 }
 
+function parseDirectOption(id, attr)
+{
+	var menarr = retrieveParser();
+	var htmtext = "";
+
+	for(var i = 0; i < menarr.length; i++)
+	{
+		if(menarr[i].getElementsByTagName("id")[0].getAttribute("value") === id)
+		{
+    		return menarr[i].getElementsByTagName(attr)[0];
+		}
+	}
+}
 function parseDirect(id, attr)
 {
 	var menarr = retrieveParser();
